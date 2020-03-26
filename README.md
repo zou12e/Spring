@@ -12,5 +12,7 @@ SpringBoot对应SpringCloud版本号
 https://start.spring.io/actuator/info
 [spring-cloud]内容对照
 
-
+错误
+Exception in thread "main" java.lang.NoClassDefFoundError: org/springframework/util/unit/DataSize
+maven compile 
 ````
