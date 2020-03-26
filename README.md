@@ -15,4 +15,5 @@ https://start.spring.io/actuator/info
 错误
 Exception in thread "main" java.lang.NoClassDefFoundError: org/springframework/util/unit/DataSize
 maven compile 
+pom版本问题
 ````
