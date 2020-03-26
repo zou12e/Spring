@@ -6,4 +6,11 @@ spring-boot-starter-gateway
 
 <packaging>pom</packaging> 找不到配置文件
 
+
+
+SpringBoot对应SpringCloud版本号
+https://start.spring.io/actuator/info
+[spring-cloud]内容对照
+
+
 ````
