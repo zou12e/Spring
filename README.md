@@ -22,7 +22,8 @@ maven compile
 pom版本问题
 
 
-2020-03-27 14:56:40.359 ERROR 27915 --- [0.0-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Operation timed out (Connection timed out) executing GET http://spring-cloud-producer/hello?name=dfdsf] with root cause
+ERROR 27915 --- [0.0-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : 
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Operation timed out (Connection timed out) executing GET http://spring-cloud-producer/hello?name=dfdsf] with root cause
 新项目出现问题，先查看服务端口是否被占用
 localhost:8080 访问没有问题
 192.168.1.101:8080 访问有问题， 就改项目端口
