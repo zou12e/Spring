@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="" />
+    <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/springcloud-config-beta.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/springcloud-config-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/target/classes/com/sc/EurekaProducerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/target/classes/com/sc/producer/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/GateWayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/gateway/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/gateway/fallback/HelloRemoteFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/gateway/remote/HelloRemote.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +43,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -38,6 +55,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZbLXTQCDZ7YScYM6UT0uj8E7Cj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -187,12 +205,23 @@
       <workItem from="1585191408051" duration="8625000" />
       <workItem from="1585207972792" duration="145000" />
       <workItem from="1585208124960" duration="3161000" />
-      <workItem from="1585211362907" duration="21412000" />
+      <workItem from="1585211362907" duration="21449000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/springcloud_gateway$EurekaProducerApplication.ic" NAME="EurekaProducerApplication Coverage Results" MODIFIED="1585291651790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
