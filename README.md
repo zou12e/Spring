@@ -28,4 +28,12 @@ Servlet.service() for servlet [dispatcherServlet] in context with path [] threw 
 localhost:8080 访问没有问题
 192.168.1.101:8080 访问有问题， 就改项目端口
 
+
+
+Cannot load driver class: com.mysql.cj.jdbc.Driver
+检查数据库版本
+mysql 
+select version()
+
+
 ```
