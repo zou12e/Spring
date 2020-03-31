@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/RWADME.md" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/RWADME.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -277,7 +271,7 @@
       <workItem from="1585211362907" duration="21702000" />
       <workItem from="1585300597582" duration="1753000" />
       <workItem from="1585306670740" duration="1309000" />
-      <workItem from="1585534258898" duration="23320000" />
+      <workItem from="1585534258898" duration="23721000" />
     </task>
     <servers />
   </component>
