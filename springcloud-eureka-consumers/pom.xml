@@ -6,11 +6,11 @@
 
     <!-- 三坐标 -->
     <groupId>com.sc</groupId>
-    <artifactId>springcloud-gateway</artifactId>
+    <artifactId>springcloud-eureka-consumers</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- 工程名称描述 -->
-    <name>springcloud-gateway</name>
+    <name>springcloud-eureka-consumers</name>
     <description>网关</description>
 
     <!-- 打包方式
@@ -47,25 +47,35 @@
     <!-- 加入依赖 -->
     <dependencies>
 
+        <!-- 服务监控  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <!-- hystrix熔断器  -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
+
+        <!-- hystrix-dashboard 封装hystrix的监控面板 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
         </dependency>
 
+        <!-- @EnableDiscoveryClient来进行服务的注册 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!--
+            spring-cloud-starter-openfeign：
+            这个包是springcloud对于Feign的封装，Feign是一个声明式的Web服务客户端。它支持Feign本身的注解、JAX-RS注解以及SpringMVC的注解。
+            Spring Cloud集成Ribbon和Eureka以在使用Feign时提供负载均衡的http客户端。
+         -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

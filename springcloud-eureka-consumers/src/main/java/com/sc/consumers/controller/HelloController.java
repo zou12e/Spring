@@ -1,6 +1,6 @@
-package com.sc.gateway.controller;
+package com.sc.consumers.controller;
 
-import com.sc.gateway.remote.HelloRemote;
+import com.sc.consumers.remote.HelloRemote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

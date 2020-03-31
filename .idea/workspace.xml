@@ -2,19 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/springcloud-config-beta.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/springcloud-config-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config/src/main/java/com/sc/ConfigApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/RWADME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/target/classes/com/sc/EurekaProducerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/target/classes/com/sc/producer/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/GateWayApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/gateway/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/gateway/fallback/HelloRemoteFallBack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/target/classes/com/sc/gateway/remote/HelloRemote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/GateWayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/EurekaConsumersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/fallback/HelloRemoteFallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/fallback/HelloRemoteFallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/remote/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/remote/HelloRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +76,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-config/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,15 +90,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sc" />
       <recent name="sc" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springcloud-config/src/main/resources" />
       <recent name="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/controller" />
       <recent name="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/remote" />
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main" />
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources" />
-      <recent name="$PROJECT_DIR$/springcloud-eureka/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GateWayApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaProducerApplication2">
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaApplication" />
       <module name="springcloud-eureka" />
@@ -115,15 +128,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GateWayApplication" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sc.GateWayApplication" />
-      <module name="springcloud-gateway" />
+    <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
+      <module name="springcloud-eureka-consumers" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="springcloud-eureka-consumers" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="springcloud-eureka-consumers" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.ConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,9 +222,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaProducerApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-eureka-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaProducerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="–server.port=8088" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springcloud-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.GateWayApplication" />
+      <module name="springcloud-eureka-consumers" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaConsumersApplication" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
@@ -161,7 +243,7 @@
     <configuration name="eurka-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springcloud-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaApplication" />
-      <option name="PROGRAM_PARAMETERS" value="–server.port=8080" />
+      <option name="PROGRAM_PARAMETERS" value="–server.port=8762" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
@@ -169,16 +251,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GateWayApplication" />
+      <item itemvalue="Application.EurekaConsumersApplication" />
       <item itemvalue="Application.EurekaApplication" />
       <item itemvalue="Spring Boot.eurka-2" />
+      <item itemvalue="Spring Boot.EurekaProducerApplication2" />
       <item itemvalue="Spring Boot.GateWayApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
+      <item itemvalue="Spring Boot.ConfigApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EurekaProducerApplication" />
+        <item itemvalue="Spring Boot.ConfigApplication" />
         <item itemvalue="Application.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -205,7 +290,10 @@
       <workItem from="1585191408051" duration="8625000" />
       <workItem from="1585207972792" duration="145000" />
       <workItem from="1585208124960" duration="3161000" />
-      <workItem from="1585211362907" duration="21449000" />
+      <workItem from="1585211362907" duration="21702000" />
+      <workItem from="1585300597582" duration="1753000" />
+      <workItem from="1585306670740" duration="1309000" />
+      <workItem from="1585534258898" duration="12243000" />
     </task>
     <servers />
   </component>
@@ -217,7 +305,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

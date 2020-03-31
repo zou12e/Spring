@@ -1,6 +1,6 @@
-package com.sc.gateway.fallback;
+package com.sc.consumers.fallback;
 
-import com.sc.gateway.remote.HelloRemote;
+import com.sc.consumers.remote.HelloRemote;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 

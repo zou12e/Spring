@@ -1,0 +1,22 @@
+server:
+  port: 8900
+spring:
+  application:
+    name: spring-cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zou12e/Spring # git仓库的地址
+          search-paths: config  # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: #Git仓库用户名
+          password: #Git仓库密码
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#  Spring Cloud Config也提供本地存储配置的方式。
+#  我们只需要设置属性spring.profiles.active=native，Config Server会默认从应用的src/main/resource目录下检索配置文件。
+#  也可以通过spring.cloud.config.server.native.searchLocations=file:E:/properties/属性来指定配置文件的位置。
+#  虽然Spring Cloud Config提供了这样的功能，但是为了支持更好的管理内容和版本控制的功能，还是推荐使用git的方式。

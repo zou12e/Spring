@@ -16,11 +16,15 @@ import org.springframework.context.annotation.Bean;
 @EnableFeignClients
 @EnableHystrixDashboard
 @EnableCircuitBreaker
-public class GateWayApplication {
+public class EurekaConsumersApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GateWayApplication.class, args);
+        SpringApplication.run(EurekaConsumersApplication.class, args);
     }
 
+    /**
+     * 启动类添加启用Hystrix Dashboard和熔断器
+     * @return
+     */
     @Bean
     public ServletRegistrationBean getServlet(){
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
