@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-config/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-config/src/main/java/com/sc/ConfigApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/RWADME.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/RWADME.md" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/RWADME.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/GateWayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/EurekaConsumersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/fallback/HelloRemoteFallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/fallback/HelloRemoteFallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/remote/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/remote/HelloRemote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaProducerApplication2">
+  <component name="RunManager" selected="Spring Boot.EurekaProducerApplication">
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaApplication" />
       <module name="springcloud-eureka" />
@@ -225,7 +209,7 @@
     <configuration name="EurekaProducerApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springcloud-eureka-producer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaProducerApplication" />
-      <option name="PROGRAM_PARAMETERS" value="–server.port=8088" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=8090" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,9 +238,9 @@
       <item itemvalue="Application.EurekaConsumersApplication" />
       <item itemvalue="Application.EurekaApplication" />
       <item itemvalue="Spring Boot.eurka-2" />
-      <item itemvalue="Spring Boot.EurekaProducerApplication2" />
       <item itemvalue="Spring Boot.GateWayApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.EurekaProducerApplication2" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
     </list>
@@ -293,7 +277,7 @@
       <workItem from="1585211362907" duration="21702000" />
       <workItem from="1585300597582" duration="1753000" />
       <workItem from="1585306670740" duration="1309000" />
-      <workItem from="1585534258898" duration="12243000" />
+      <workItem from="1585534258898" duration="23320000" />
     </task>
     <servers />
   </component>

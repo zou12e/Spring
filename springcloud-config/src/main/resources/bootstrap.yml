@@ -16,6 +16,30 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+## 开启消息跟踪
+#  spring.cloud.bus.trace.enabled=true
+#
+#  spring.rabbitmq.host=127.0.0.1
+#  spring.rabbitmq.port=5672
+#  spring.rabbitmq.username=
+#  spring.rabbitmq.password=COPY
+#  配置文件需要增加RebbitMq的相关配置，这样客户端代码就改造完成了。
+#  BUS 更新配置
+#  curl -X POST http://localhost:8900/actuator/bus-refresh
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 #  Spring Cloud Config也提供本地存储配置的方式。
 #  我们只需要设置属性spring.profiles.active=native，Config Server会默认从应用的src/main/resource目录下检索配置文件。
 #  也可以通过spring.cloud.config.server.native.searchLocations=file:E:/properties/属性来指定配置文件的位置。

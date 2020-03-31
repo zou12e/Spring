@@ -3,14 +3,14 @@ server:
 spring:
   application:
     name: spring-cloud-producer
-  cloud:
-    config:
-      name: springcloud-config
-      profile: dev
-      label: master
-      discovery:
-        enabled: true
-        serviceId: spring-cloud-config
+#  cloud:
+#    config:
+#      name: springcloud-config
+#      profile: dev
+#      label: master
+#      discovery:
+#        enabled: true
+#        serviceId: spring-cloud-config
 #         /{application}/{profile}[/{label}]
 #         /{application}-{profile}.yml
 #         /{label}/{application}-{profile}.yml
@@ -22,18 +22,38 @@ spring:
 #        spring.cloud.config.label：对应git的分支。如果配置中心使用的是本地存储，则该参数无用
 #        spring.cloud.config.uri：配置中心的具体地址
 #        spring.cloud.config.discovery.service-id：指定配置中心的service-id，便于扩展为高可用配置集群。
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+#    bus:
+#      trace:
+#        enabled: true
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+## 开启消息跟踪
+#  spring.cloud.bus.trace.enabled=true
+#
+#  spring.rabbitmq.host=127.0.0.1
+#  spring.rabbitmq.port=5672
+#  spring.rabbitmq.username=
+#  spring.rabbitmq.password=COPY
+#  配置文件需要增加RebbitMq的相关配置，这样客户端代码就改造完成了。
+#  BUS 更新配置
+#  curl -X POST http://localhost:8089/actuator/bus-refresh
 
-#  更新配置
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+
+#  单机版更新配置
 #  curl -X POST http://localhost:8089/actuator/refresh
 #  management.security.enabled： springboot 1.5.X 以上默认开通了安全认证，所以需要添加这个配置
 #  management.endpoints.web.exposure.include： springboot 2.x 默认只开启了info、health的访问，*代表开启所有访问
@@ -41,3 +61,5 @@ management:
 #  spring.cloud.config.discovery.enabled ：开启Config服务发现支持
 #  spring.cloud.config.discovery.serviceId ：指定server端的name,也就是server端spring.application.name的值
 #  eureka.client.serviceUrl.defaultZone ：指向注册中心的地址
+
+
