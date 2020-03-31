@@ -22,6 +22,10 @@ eureka:
     username: guest
     password: guest
 
+
+
+
+
 ## 开启消息跟踪
 #  spring.cloud.bus.trace.enabled=true
 #

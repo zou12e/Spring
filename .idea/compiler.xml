@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-eureka-consumers" />
+        <module name="springcloud-config" />
         <module name="springcloud-eureka-producer" />
         <module name="springcloud-eureka" />
-        <module name="springcloud-config" />
+        <module name="springcloud-eureka-consumers" />
       </profile>
     </annotationProcessing>
   </component>
