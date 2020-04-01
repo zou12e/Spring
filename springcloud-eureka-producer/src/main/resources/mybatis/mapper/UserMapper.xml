@@ -19,7 +19,7 @@
         FROM user
     </select>
 
-    <select id="getUser" parameterType="java.lang.String" resultMap="BaseResultMap" >
+    <select id="getUser" parameterType="java.lang.Integer" resultMap="BaseResultMap" >
         SELECT
         <include refid="Base_Column_List" />
         FROM

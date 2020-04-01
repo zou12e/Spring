@@ -8,12 +8,13 @@ eureka:
     enable-self-preservation: false
   client:
     register-with-eureka: false
-    fetch-registry: false # 是否拉取其它服务的信息，默认是true
+    fetch-registry: true # 是否拉取其它服务的信息，默认是true
     service-url:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
 
 #  eureka.client.register-with-eureka 属性表示是否将自己注册到Eureka Server， 默认为true。 由于当前应用就是Eureka Server， 因此设为 false；
-#  eureka.client.fetch-registry 表示是否从Eureka Server获取注册信息，默认为true。 如果这是一个单点的 Eureka Server，不需要同步其他节点的数据，可以设为false。
+#  eureka.client.fetch-registry 表示是否从Eureka Server获取注册信息，默认为true。
+#  如果这是一个单点的 Eureka Server，不需要同步其他节点的数据，可以设为false。
 #
 #  enable-self-preservation： 防止由于Eureka的机制导致Client被错误显示在线，仅在开发环境使用，生产环境需缓存此信息，防止因网络波动导致服务频繁上下线。
 
