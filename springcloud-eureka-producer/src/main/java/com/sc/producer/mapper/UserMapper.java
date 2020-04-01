@@ -12,7 +12,7 @@ public interface UserMapper {
 
     List<User> getAll();
 
-    User getUser(String id);
+    User getUser(Integer id);
 
     Long insertUser(User user);
 
