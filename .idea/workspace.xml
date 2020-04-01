@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/java/com/sc/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/java/com/sc/SpringCloudConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaProducerApplication">
+  <component name="RunManager" selected="Spring Boot.SpringCloudConfigApplication">
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaApplication" />
       <module name="springcloud-eureka" />
@@ -205,6 +206,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.SpringCloudConfigApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,8 +221,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaProducerApplication" />
         <item itemvalue="Spring Boot.SpringCloudConfigApplication" />
+        <item itemvalue="Spring Boot.EurekaProducerApplication" />
         <item itemvalue="Application.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -251,7 +253,7 @@
       <workItem from="1585300597582" duration="1753000" />
       <workItem from="1585306670740" duration="1309000" />
       <workItem from="1585534258898" duration="23721000" />
-      <workItem from="1585670239149" duration="3799000" />
+      <workItem from="1585670239149" duration="5048000" />
     </task>
     <servers />
   </component>
