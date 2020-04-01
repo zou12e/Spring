@@ -92,3 +92,19 @@ management.endpoints.web.exposure.include=*
 检查下 RabbitMQ 连接
 Channel shutdown: connection error
 ````
+
+````
+Description:
+Parameter 1 of method requestRateLimiterGatewayFilterFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a single bean, but 2 were found:
+	- userKeyResolver: defined by method 'userKeyResolver' in class path resource [com/sc/config/Config.class]
+	- ipKeyResolver: defined by method 'ipKeyResolver' in class path resource [com/sc/config/Config.class]
+Action:
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+Disconnected from the target VM, address: '127.0.0.1:51782', transport: 'socket'
+Process finished with exit code 1
+
+
+spring cloud gateway 
+key-resolver 与 config 一一对应
+
+````
