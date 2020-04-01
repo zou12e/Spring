@@ -63,9 +63,9 @@ url=jdbc:mysql://localhost:3306/test?serverTimezone=UTC&?useUnicode=true&charact
 username=root
 password=root
 
-3、设定时区时，serverTimezone=UTC比中国时间早8个小时，若在中国，可设置serverTimezone=Shanghai或者serverTimezone=Hongkong，例如：
+3、设定时区时，serverTimezone=UTC比中国时间早8个小时，若在中国，可设置serverTimezone=Asia/Shanghai或者serverTimezone=Hongkong，例如：
 driverClassName=com.mysql.cj.jdbc.Driver
-url=jdbc:mysql://localhost:3306/test?serverTimezone=Shanghai&?useUnicode=true&characterEncoding=utf8&useSSL=false
+url=jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai&?useUnicode=true&characterEncoding=utf8&useSSL=false
 username=root
 password=root
 

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="" />
+    <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/java/com/sc/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/java/com/sc/SpringCloudConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/bootstrap.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,19 +166,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-config" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.ConfigApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springcloud-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaApplication" />
@@ -205,21 +196,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springcloud-eureka-consumers" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaConsumersApplication" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="eurka-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springcloud-eureka" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaApplication" />
-      <option name="PROGRAM_PARAMETERS" value="–server.port=8762" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <configuration name="SpringCloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.SpringCloudConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -227,17 +212,15 @@
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
       <item itemvalue="Application.EurekaApplication" />
-      <item itemvalue="Spring Boot.eurka-2" />
-      <item itemvalue="Spring Boot.GateWayApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.EurekaProducerApplication2" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
-      <item itemvalue="Spring Boot.ConfigApplication" />
+      <item itemvalue="Spring Boot.SpringCloudConfigApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EurekaProducerApplication" />
-        <item itemvalue="Spring Boot.ConfigApplication" />
+        <item itemvalue="Spring Boot.SpringCloudConfigApplication" />
         <item itemvalue="Application.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -268,7 +251,7 @@
       <workItem from="1585300597582" duration="1753000" />
       <workItem from="1585306670740" duration="1309000" />
       <workItem from="1585534258898" duration="23721000" />
-      <workItem from="1585670239149" duration="2425000" />
+      <workItem from="1585670239149" duration="3799000" />
     </task>
     <servers />
   </component>

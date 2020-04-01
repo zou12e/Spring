@@ -11,16 +11,15 @@ spring:
           search-paths: config  # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: #Git仓库用户名
           password: #Git仓库密码
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
 
 
 
@@ -38,11 +37,11 @@ eureka:
 #  curl -X POST http://localhost:8900/actuator/bus-refresh
 
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
 
 #  Spring Cloud Config也提供本地存储配置的方式。
 #  我们只需要设置属性spring.profiles.active=native，Config Server会默认从应用的src/main/resource目录下检索配置文件。
