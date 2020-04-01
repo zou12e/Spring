@@ -86,3 +86,9 @@ curl -X POST http://localhost:8900/actuator/bus-refresh
 设置
 management.endpoints.web.exposure.include=*
 ````
+
+
+````
+检查下 RabbitMQ 连接
+Channel shutdown: connection error
+````
