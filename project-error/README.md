@@ -77,7 +77,7 @@ password=root
 </dependency>
 但是你的driver用的还是com.mysql.jdbc.Driver就会报错，此时需要把com.mysql.jdbc.Driver改为com.mysql.cj.jdbc.Driver。
 
-```
+````
 
 ````
 curl -X POST http://localhost:8900/actuator/bus-refresh
