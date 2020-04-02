@@ -1,4 +1,4 @@
-## Spring Cloud 项目结构
+## Spring Cloud 版本
  
 
 ![](https://img.shields.io/badge/Spring%20Boot-2.0.8.RELEASE-brightgreen)
@@ -9,11 +9,23 @@
 
 ***
 
+
  
 ### 架构
 
  [架构](https://www.processon.com/view/link/5e85a729e4b07b16dcde329f)
  
  
-### 
+### 项目目录
+
+|  目录                           |      信息      |  其他     | 备注           |
+|--------------------------------|----------------|----------|----------------|
+|  config                        |   配置信息      |          |  服务统一配置信息 |
+|  project-error                 |   错误信息      |          |  开发错误信息    |
+|  springcloud-config            |   配置中心      |          |                |
+|  springcloud-eureka            |   注册中心      |          |                |
+|  springcloud-eureka-consumers  |   服务消费者     |         |                |
+|  springcloud-eureka-producer   |   服务提供者     |         |                |
+|  springcloud-gateway           |   网关          |         |                |
+ 
  
