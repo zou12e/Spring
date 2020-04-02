@@ -15,17 +15,24 @@
 
  [架构](https://www.processon.com/view/link/5e85a729e4b07b16dcde329f)
  
+***
  
+ 服务的提供与Feign调用
+
+跟我学SpringCloud | 第四篇：熔断器Hystrix
+
+跟我学SpringCloud | 第五篇：熔断监控Hystrix Dashboard和Turbine
+
 ### 项目目录
 
 |  目录                           |      信息      |  其他     | 备注           |
 |--------------------------------|----------------|----------|----------------|
 |  config                        |   配置信息      |          |  服务统一配置信息 |
 |  project-error                 |   错误信息      |          |  开发错误信息    |
-|  springcloud-config            |   配置中心      |          |                |
+|  springcloud-config            |   配置中心      |          |  消息总线, RabbitMQ |
 |  springcloud-eureka            |   注册中心      |          |                |
-|  springcloud-eureka-consumers  |   服务消费者     |         |                |
-|  springcloud-eureka-producer   |   服务提供者     |         |                |
-|  springcloud-gateway           |   网关          |         |                |
+|  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix |
+|  springcloud-eureka-producer   |   服务提供者    |           |                 |
+|  springcloud-gateway           |   网关         |           | 动态路由, 熔断、限流 |
  
  
