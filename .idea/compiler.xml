@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-config" />
+        <module name="springcloud-gateway" />
         <module name="springcloud-eureka-producer" />
         <module name="springcloud-eureka" />
         <module name="springcloud-eureka-consumers" />
@@ -19,6 +20,7 @@
       <module name="springcloud-eureka" options="-parameters" />
       <module name="springcloud-eureka-consumers" options="-parameters" />
       <module name="springcloud-eureka-producer" options="-parameters" />
+      <module name="springcloud-gateway" options="-parameters" />
     </option>
   </component>
 </project>

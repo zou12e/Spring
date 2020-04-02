@@ -37,6 +37,11 @@ public class UserController {
     @Autowired
     UserMapper userMapper;
 
+    @PostMapping("/login")
+    public User login(@RequestBody User user) {
+        return userMapper.login(user);
+    }
+
     @GetMapping("/getUsers")
     public List<User> getUsers() {
         return userMapper.getAll();

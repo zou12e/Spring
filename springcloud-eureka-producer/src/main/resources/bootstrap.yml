@@ -2,7 +2,7 @@ server:
   port: 8089
 spring:
   application:
-    name: spring-cloud-producer
+    name: producer
   cloud:
     config:
       name: springcloud-config

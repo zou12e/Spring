@@ -1,0 +1,115 @@
+server:
+  port: 8800
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    config:
+      name: springcloud-config
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        serviceId: spring-cloud-config
+
+    gateway:
+      routes:
+#        - id: gateway-service
+#          uri: https://blog.csdn.net
+#          predicates:
+#            - Path=/meteor_93
+#        - id: producer
+#          uri: lb://spring-cloud-producer
+#          predicates:
+#            - Path=/hello2
+#        - id: request_rate_limiter_route
+#          uri: lb://spring-cloud-producer
+#          filters:
+#            - name: RequestRateLimiter
+#              args:
+#                redis-rate-limiter.replenishRate: 11
+#                redis-rate-limiter.burstCapacity: 21
+#                key-resolver: "#{@userKeyResolver}"
+#          predicates:
+#            - Method=GET
+#          filter 名称必须是 RequestRateLimiter
+#          redis-rate-limiter.replenishRate：允许用户每秒处理多少个请求
+#          redis-rate-limiter.burstCapacity：令牌桶的容量，允许在一秒钟内完成的最大请求数
+#          key-resolver：使用 SpEL 按名称引用 bean
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+
+
+#  id：我们自定义的路由 ID，保持唯一
+#  uri：目标服务地址
+#  predicates：路由条件，Predicate 接受一个输入参数，返回一个布尔值结果。该接口包含多种默认方法来将 Predicate 组合成其他复杂的逻辑（比如：与，或，非）。
+#  上面这段配置的意思是，配置了一个 id 为 gateway-service 的路由规则，
+#  当访问地址 http://localhost:8080/meteor_93 时会自动转发到地址：https://blog.csdn.net
+
+#  spring.cloud.gateway.discovery.locator.enabled：是否与服务注册于发现组件进行结合，
+#  spring.cloud.gateway.discovery.locator.lowerCaseServiceId：是将请求路径上的服务名配置为小写（因为服务注册的时候，向注册中心注册时将服务名转成大写的了）。
+
+#  通过 serviceId 转发到具体的服务实例。默认为 false，设为 true 便开启通过服务中心的自动根据 serviceId 创建路由的功能。
+#  将 gateway 注册到服务中心之后，网关会自动代理所有的在注册中心的服务，访问这些服务的语法为：
+#  http://网关地址：端口/服务中心注册 serviceId/具体的url
+
+#  logging.level.org.springframework.cloud.gateway 调整相 gateway 包的 log 级别，以便排查问题
+
+
+# 路由规则
+# 1. 通过时间匹配 设定时间之前，之后，当时
+# predicates:
+#  - After=2019-01-01T00:00:00+08:00[Asia/Shanghai]
+#  - Before=
+#  - Between=2019-01-01T00:00:00+08:00[Asia/Shanghai], 2019-07-01T00:00:00+08:00[Asia/Shanghai]
+
+# 2. 通过 Cookie 匹配 包含cookie
+# predicates:
+#  - Cookie=sessionId, test
+# curl http://localhost:8080 --cookie "sessionId=test"
+
+# 3. 通过 Header 属性匹配
+# predicates:
+#  - Header=X-Request-Id, \d+
+# curl http://localhost:8080  -H "X-Request-Id:88"
+
+# 4. 通过 Host 匹配
+# predicates:
+#  - Host=**.baidu.com
+# curl http://localhost:8080  -H "Host: www.baidu.com"
+# curl http://localhost:8080  -H "Host: md.baidu.com"
+
+# 5. 通过请求方式匹配  POST、GET、PUT、DELETE
+# predicates:
+#   - Method=GET
+# curl http://localhost:8080
+
+# 6. 通过请求路径匹配
+# predicates:
+#  - Path=/foo/{segment}
+# curl http://localhost:8080/foo/1
+# curl http://localhost:8080/foo/xx
+# curl http://localhost:8080/boo/xxx
+
+# 7. 通过请求参数匹配
+# predicates:
+#  - Query=smile
+# curl localhost:8080?smile=x&id=2
+
+# predicates:
+#  - Query=keep, pu.
+#  curl localhost:8080?keep=pub
+
+# 8. 通过请求 ip 地址进行匹配
+# predicates:
+# - RemoteAddr=192.168.1.1/24
+# curl localhost:8080
+# 如果请求的远程地址是 192.168.1.10，则此路由将匹配。
+
+# 9. 路由规则都可以组合起来

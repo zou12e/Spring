@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * 此类中的方法和远程服务中contoller中的方法名和参数需保持一致
  */
 
-@FeignClient(name="spring-cloud-producer", fallback = HelloRemoteFallBack.class)
+@FeignClient(name="PRODUCER", fallback = HelloRemoteFallBack.class)
 public interface HelloRemote {
 
     @RequestMapping(value = "/hello")

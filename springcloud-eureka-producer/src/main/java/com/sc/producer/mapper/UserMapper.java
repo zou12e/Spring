@@ -12,6 +12,8 @@ public interface UserMapper {
 
     List<User> getAll();
 
+    User login(User user);
+
     User getUser(Integer id);
 
     Long insertUser(User user);

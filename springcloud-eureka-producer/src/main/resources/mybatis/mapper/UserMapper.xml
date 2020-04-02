@@ -19,6 +19,14 @@
         FROM user
     </select>
 
+    <select id="login" parameterType="com.sc.producer.model.User" resultMap="BaseResultMap" >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM
+        user
+        WHERE name = #{name} and password = #{password}
+    </select>
+
     <select id="getUser" parameterType="java.lang.Integer" resultMap="BaseResultMap" >
         SELECT
         <include refid="Base_Column_List" />
@@ -30,9 +38,9 @@
     <insert id="insertUser" parameterType="com.sc.producer.model.User">
         INSERT INTO
         user
-        (id, nick_name, age, create_date)
+        (id, name, age, email, password)
         VALUES
-        (#{id}, #{nickName}, #{age}, #{createDate})
+        (#{id}, #{name}, #{age}, #{email}, #{password})
     </insert>
 
     <update id="updateUser" parameterType="com.sc.producer.model.User">
@@ -46,7 +54,7 @@
         id = #{id}
     </update>
 
-    <delete id="deleteUser" parameterType="java.lang.String">
+    <delete id="deleteUser" parameterType="java.lang.Integer">
        DELETE FROM
        		 user
        WHERE
