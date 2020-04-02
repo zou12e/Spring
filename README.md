@@ -17,11 +17,6 @@
  
 ***
  
- 服务的提供与Feign调用
-
-跟我学SpringCloud | 第四篇：熔断器Hystrix
-
-跟我学SpringCloud | 第五篇：熔断监控Hystrix Dashboard和Turbine
 
 ### 项目目录
 
