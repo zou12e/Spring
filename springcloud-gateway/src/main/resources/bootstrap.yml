@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: spring-cloud-gateway
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
   cloud:
     config:
       name: springcloud-config
@@ -14,6 +17,31 @@ spring:
 
     gateway:
       routes:
+        - id: requestratelimiter_route
+          uri: lb://producer
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 1
+                key-resolver: "#{@customKeyResolver}"
+          predicates:
+            - Method=POST,GET
+#        - id: limit_route
+#          uri: lb://producer
+#          predicates:
+#            - Path=/producer/**
+#          filters:
+#            - name: RequestRateLimiter
+#              args:
+#                key-resolver: '#{@customKeyResolver}'
+#                redis-rate-limiter.replenishRate: 1
+#                redis-rate-limiter.burstCapacity: 1
+#          filter 名称必须是 RequestRateLimiter
+#          redis-rate-limiter.replenishRate：允许用户每秒处理多少个请求
+#          redis-rate-limiter.burstCapacity：令牌桶的容量，允许在一秒钟内完成的最大请求数
+#          key-resolver：使用 SpEL 按名称引用 bean
+
 #        - id: gateway-service
 #          uri: https://blog.csdn.net
 #          predicates:
@@ -32,10 +60,7 @@ spring:
 #                key-resolver: "#{@userKeyResolver}"
 #          predicates:
 #            - Method=GET
-#          filter 名称必须是 RequestRateLimiter
-#          redis-rate-limiter.replenishRate：允许用户每秒处理多少个请求
-#          redis-rate-limiter.burstCapacity：令牌桶的容量，允许在一秒钟内完成的最大请求数
-#          key-resolver：使用 SpEL 按名称引用 bean
+
       discovery:
         locator:
           enabled: true

@@ -1,5 +1,6 @@
 package com.sc;
 
+import com.sc.resolver.CustomKeyResolver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -28,6 +29,11 @@ public class SpringCloudGatewayApplication {
                 .route("path_route", r -> r.path("/meteor_94")
                         .uri("https://www.baidu.com"))
                 .build();
+    }
+
+    @Bean
+    public CustomKeyResolver customKeyResolver() {
+       return new CustomKeyResolver();
     }
 
 }

@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/SpringCloudGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/factory/JwtCheckGatewayFilterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/resolver/CustomKeyResolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/remote/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/remote/HelloRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/SpringCloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/SpringCloudGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringCloudGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaProducerApplication">
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaApplication" />
       <module name="springcloud-eureka" />
@@ -271,8 +259,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringCloudGatewayApplication" />
         <item itemvalue="Spring Boot.EurekaProducerApplication" />
+        <item itemvalue="Spring Boot.SpringCloudGatewayApplication" />
         <item itemvalue="Spring Boot.SpringCloudConfigApplication" />
         <item itemvalue="Application.EurekaApplication" />
       </list>
@@ -304,7 +292,7 @@
       <workItem from="1585300597582" duration="1753000" />
       <workItem from="1585306670740" duration="1309000" />
       <workItem from="1585534258898" duration="23721000" />
-      <workItem from="1585670239149" duration="41084000" />
+      <workItem from="1585670239149" duration="54655000" />
     </task>
     <servers />
   </component>
@@ -328,24 +316,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/factory/JwtCheckGatewayFilterFactory.java</url>
           <line>20</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
