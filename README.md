@@ -33,10 +33,10 @@
  ***
  
  ### 框架、工具
+ 
+ [eureka原理图](https://www.processon.com/view/link/5e8c316ee4b0bf3ebcfdade8）
  ````
  eureka: 注册中心,提供服务注册和发现, 通过心跳检查维护注册的微服务
- 
-  [eureka原理图](https://www.processon.com/view/link/5e8c316ee4b0bf3ebcfdade8）
  ````
  ````
  spring-boot(consumers，producer): 注册到配置中心的微服务，每个微服务即是消费者，也是提供者
