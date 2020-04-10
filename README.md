@@ -15,6 +15,8 @@
 
  [架构](https://www.processon.com/view/link/5e85a729e4b07b16dcde329f)
  
+ [Eureka原理图](https://www.processon.com/view/link/5e8c316ee4b0bf3ebcfdade8)
+ 
 ***
  
 
@@ -34,7 +36,7 @@
  
  ### 框架、工具
  
-  [eureka原理图](https://www.processon.com/view/link/5e8c316ee4b0bf3ebcfdade8)
+
  ````
  eureka: 注册中心,提供服务注册和发现, 通过心跳检查维护注册的微服务
  ````
