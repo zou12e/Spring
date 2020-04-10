@@ -35,7 +35,10 @@
  ### 框架、工具
  ````
  eureka: 配置中心，注册中心
+ ````
+ ````
  consumers，producer: 注册到配置中心的微服务，即是消费者，也是提供者
+ ````
  spring-cloud-config: 配置中心，通用配置
  spring-cloud-bus: 消息总线，当配置中心内容改变，通知相关微服务
  feign: 微服务之间的调用
