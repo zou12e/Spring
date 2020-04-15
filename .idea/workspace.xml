@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/resolver/CustomKeyResolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/SpringCloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/SpringCloudGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -293,6 +287,10 @@
       <workItem from="1585306670740" duration="1309000" />
       <workItem from="1585534258898" duration="23721000" />
       <workItem from="1585670239149" duration="54655000" />
+      <workItem from="1586506031328" duration="1158000" />
+      <workItem from="1586764548540" duration="185000" />
+      <workItem from="1586783586789" duration="1107000" />
+      <workItem from="1586855441020" duration="351000" />
     </task>
     <servers />
   </component>
