@@ -15,6 +15,8 @@
 
  [架构](https://www.processon.com/view/link/5e85a729e4b07b16dcde329f)
  
+ [Eureka原理图](https://www.processon.com/view/link/5e8c316ee4b0bf3ebcfdade8)
+ 
 ***
  
 
@@ -33,6 +35,8 @@
  ***
  
  ### 框架、工具
+ 
+
  ````
  eureka: 注册中心,提供服务注册和发现, 通过心跳检查维护注册的微服务
  ````
@@ -46,7 +50,7 @@
  spring-cloud-bus: 消息总线，通过webhook发现配置中心内容改变，通知相关微服务，即时更新
  ````
  ````
- feign: 微服务之间的调用
+ feign: 微服务之间的调用，封装了Http调用流程
  ````
  ````
  hystrix: 熔断器， 微服务之间调用失败策略
