@@ -25,7 +25,7 @@
 |  目录                           |      信息      |  其他     | 备注           |
 |--------------------------------|----------------|----------|----------------|
 |  config                        |   配置信息      |          |  服务统一配置信息 |
-|  project-error                 |   错误信息      |          |  开发错误信息    |
+|  project-error                 |   错误信息      |          |  开发错误信息     |
 |  springcloud-config            |   配置中心      |          |  消息总线、RabbitMQ |
 |  springcloud-eureka            |   注册中心      |          |                |
 |  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix |
