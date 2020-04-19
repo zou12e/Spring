@@ -113,4 +113,11 @@ key-resolver 与 config 一一对应
 ````
 Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://producer/login": producer; nested exception is java.net.UnknownHostException: producer] with root cause
 
+如果使用服务名调用 需要开启负载 (@LoadBalanced)
+@Bean
+@LoadBalanced
+public RestTemplate restTemplate(){
+	return new RestTemplate();
+}
+
 ````
