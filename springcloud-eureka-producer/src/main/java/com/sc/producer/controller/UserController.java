@@ -1,7 +1,12 @@
 package com.sc.producer.controller;
 
+import com.sc.api.IProducerService;
+import com.sc.producer.dto.EntityCopyMapper;
 import com.sc.producer.mapper.UserMapper;
 import com.sc.producer.model.User;
+import com.sc.constant.IProducerServiceUrl;
+import com.sc.service.user.dto.UserDTO;
+import com.sc.service.user.dto.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -13,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RefreshScope
-public class UserController {
+public class UserController implements IProducerService {
 
     @Value("${mode}")
     private String mode;
@@ -41,22 +46,28 @@ public class UserController {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-    @PostMapping("/login")
-    public User login(@RequestBody User user) {
-        User loginUser = userMapper.login(user);
+    @PostMapping(IProducerServiceUrl.LOGIN)
+    public UserDTO login(@RequestBody UserVO user) {
+        User loginUser = userMapper.login(EntityCopyMapper.INSTANCE.toUser(user));
         stringRedisTemplate.opsForValue().set(String.valueOf(loginUser.getId()), loginUser.getName());
-        return loginUser;
+        return EntityCopyMapper.INSTANCE.toUserDTO(loginUser);
     }
 
-    @GetMapping("/getUsers")
-    public List<User> getUsers() {
-        return userMapper.getAll();
+    @GetMapping(IProducerServiceUrl.GETUSERS)
+    public List<UserDTO> getUsers() {
+        return EntityCopyMapper.INSTANCE.toListUserDTO(userMapper.getAll());
     }
 
-    @GetMapping("/getUser/{id}")
-    public User getUser(@PathVariable("id") Integer id) {
-        return userMapper.getUser(id);
+    @GetMapping(IProducerServiceUrl.GETUSER)
+    public UserDTO getUser(@PathVariable("id") Integer id) {
+        return EntityCopyMapper.INSTANCE.toUserDTO(userMapper.getUser(id));
     }
+
+    @GetMapping(IProducerServiceUrl.GETUSERBYID)
+    public UserDTO getUserById(@ModelAttribute UserVO user) {
+        return EntityCopyMapper.INSTANCE.toUserDTO(userMapper.getUser(user.getId()));
+    }
+
 
     @PostMapping("/add")
     public Long save(@RequestBody User user) {

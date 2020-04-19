@@ -7,15 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-config" />
-        <module name="springcloud-gateway" />
-        <module name="springcloud-eureka-producer" />
         <module name="springcloud-eureka" />
+        <module name="springcloud-gateway" />
+        <module name="springcloud-client-api" />
+        <module name="springcloud-eureka-producer" />
         <module name="springcloud-eureka-consumers" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-client-api" options="-parameters" />
       <module name="springcloud-config" options="-parameters" />
       <module name="springcloud-eureka" options="-parameters" />
       <module name="springcloud-eureka-consumers" options="-parameters" />

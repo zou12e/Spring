@@ -34,4 +34,17 @@ public class EurekaConsumersApplication {
         registrationBean.setName("HystrixMetricsStreamServlet");
         return registrationBean;
     }
+
+//    @Bean
+//    @LoadBalanced
+//    public RestTemplate restTemplate(RestTemplateBuilder builder) {
+//        return builder.build();
+//    }
+//
+//    @Bean
+//    public ProducerService producerService() {
+//        return new ProducerService();
+//    }
+
+
 }

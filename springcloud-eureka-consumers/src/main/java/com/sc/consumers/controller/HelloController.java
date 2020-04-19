@@ -27,4 +27,7 @@ public class HelloController {
     public String index1() {
         return helloRemote.hello1();
     }
+
+
+
 }

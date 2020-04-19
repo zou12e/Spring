@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: spring-cloud-consumers
+    name: consumers
   cloud:
     config:
       name: springcloud-config

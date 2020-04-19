@@ -70,7 +70,7 @@ public class AccessGatewayFilter implements GlobalFilter {
 
 //            modifyResponseFilter(exchange, chain);
             // return chain.filter(exchange.mutate().request(builder.build()).build());
-            return chain.filter(exchange.mutate().request(builder.build()).build()).then(Mono.fromRunnable(() -> {
+//            return chain.filter(exchange.mutate().request(builder.build()).build()).then(Mono.fromRunnable(() -> {
 
 //                exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
 //                exchange.getAttributes().put("ResponseData", "originalBody");
@@ -83,13 +83,13 @@ public class AccessGatewayFilter implements GlobalFilter {
 //                String rbody = "err";
 //                exchange.getResponse().writeWith(bufferFactory.wrap(rbody));
 //                    return;
-            }));
+//            }));
 //        }
 //        return unauthorized(exchange);
 
-//        return chain.filter(exchange).then(Mono.fromRunnable(() -> {
-//            log.info("second post filter");
-//        }));
+        return chain.filter(exchange).then(Mono.fromRunnable(() -> {
+            log.info("second post filter");
+        }));
     }
 
     /**
