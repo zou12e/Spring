@@ -17,6 +17,8 @@
  
  [Eureka原理图](https://www.processon.com/view/link/5e8c316ee4b0bf3ebcfdade8)
  
+ [Hystrix工作流程](https://www.processon.com/view/link/5e9bc3c95653bb1a686e978c)
+
 ***
  
 
