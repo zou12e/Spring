@@ -116,8 +116,13 @@ Servlet.service() for servlet [dispatcherServlet] in context with path [] threw 
 如果使用服务名调用 需要开启负载 (@LoadBalanced)
 @Bean
 @LoadBalanced
-public RestTemplate restTemplate(){
-	return new RestTemplate();
+public RestTemplate restTemplate(RestTemplateBuilder builder) {
+	return builder.build();
 }
+RestTemplate
+
+Spring Boot<=1.3 无需定义，Spring Boot自动为您定义了一个。
+Spring Boot >= 1.4 Spring Boot不再自动定义一个RestTemplate，而是定义了一个RestTemplateBuilder允许您更好地控制所RestTemplate创建的对象
+
 
 ````
