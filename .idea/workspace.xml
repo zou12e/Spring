@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/api/IProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IProducerServiceUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/ProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/dto/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/utils/MapToolsUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/utils/ProducerEntityCopyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/resources/MATE-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/ConsumersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/dto/EntityCopyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/EurekaConsumersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/EurekaConsumersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -352,7 +328,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="16395000" />
+      <workItem from="1587289151404" duration="16861000" />
     </task>
     <servers />
   </component>
