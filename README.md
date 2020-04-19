@@ -30,6 +30,7 @@
 |  project-error                 |   错误信息      |          |  开发错误信息     |
 |  springcloud-config            |   配置中心      |          |  消息总线、RabbitMQ |
 |  springcloud-eureka            |   注册中心      |          |                |
+|  springcloud-client-api        |   服务提供者API    |        |  Ribbon + Hystrix调用 |
 |  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix |
 |  springcloud-eureka-producer   |   服务提供者    |           |                 |
 |  springcloud-gateway           |   网关         |           | 动态路由、 熔断、限流 |
