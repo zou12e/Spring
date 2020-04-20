@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/thirdparty/IThirdPartyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/IFeignProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/FeignConsumersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/ConfigController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-client-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/api/IProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/api/IProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/ConsumersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/ConsumersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/fallback/HelloRemoteFallBack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/remote/HelloRemote.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -340,7 +330,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="25415000" />
+      <workItem from="1587289151404" duration="26985000" />
     </task>
     <servers />
   </component>
