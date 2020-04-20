@@ -73,6 +73,17 @@
             <artifactId>spring-cloud-openfeign-core</artifactId>
         </dependency>
 
+        <!-- hystrix熔断器  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+        <!-- hystrix熔断器  -->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-hystrix</artifactId>
+        </dependency>
+
 
     </dependencies>
 

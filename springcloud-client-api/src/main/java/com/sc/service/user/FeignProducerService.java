@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name="PRODUCER")
-public interface IFeignProducerService {
+@FeignClient(name="PRODUCER",
+        // fallback = FeignProducerServiceFallBack.class ,
+        fallbackFactory = FeignProducerServiceFallBackFactory.class)
+public interface FeignProducerService {
 
    @PostMapping(IProducerServiceUrl.LOGIN)
    UserDTO login(@RequestBody UserVO  vo);
@@ -22,9 +24,6 @@ public interface IFeignProducerService {
 
 //   @GetMapping(IProducerServiceUrl.GETUSERBYID)
 //   UserDTO getUserById(@ModelAttribute UserVO user );
-
-//   @GetMapping(IProducerServiceUrl.GETUSERBYID)
-//   UserDTO getUserById(@ModelAttribute UserVO vo);
 
    /**
     * feign不支持@ModelAttribute的传递方式

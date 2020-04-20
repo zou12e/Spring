@@ -1,7 +1,8 @@
 package com.sc.consumers.controller;
 
+import com.sc.api.IFeignProducerServiceClient;
 import com.sc.service.thirdparty.IThirdPartyService;
-import com.sc.service.user.FeignProducerService;
+import com.sc.service.user.FeignProducerServiceClient;
 import com.sc.service.user.dto.UserDTO;
 import com.sc.service.user.dto.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +12,13 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/feign")
-public class FeignConsumersController {
+@RequestMapping("/ifeign")
+public class IFeignConsumersController {
+
+
 
     @Autowired
-    FeignProducerService iproducerService;
-
+    FeignProducerServiceClient iproducerService;
 
     @Autowired
     IThirdPartyService ithirdPartyService;

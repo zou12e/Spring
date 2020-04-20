@@ -15,3 +15,23 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+# 默认所有断路器超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+# 单独方法配置
+    FeignProducerService#getUser(Integer):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5
+    FeignProducerServiceClient#getUser(Integer):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5

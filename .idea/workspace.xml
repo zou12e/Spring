@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/api/IFeignProducerServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IFeignProducerServiceUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceClientFallBackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceFallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceFallBackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/IFeignConsumersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/IFeignUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/ConsumersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/ConsumersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-client-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IProducerServiceUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IProducerServiceUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/IFeignProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/FeignConsumersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/FeignConsumersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,11 +85,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sc.producer.controller" />
-      <recent name="com.sc.consumers.controller" />
       <recent name="com.sc.service.user" />
-      <recent name="com.sc.producer.dto" />
-      <recent name="com.sc.spi.service.user.dto" />
+      <recent name="com.sc.consumers.controller" />
+      <recent name="com.sc.constant" />
+      <recent name="com.sc.api" />
+      <recent name="com.sc.producer.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springcloud-client-api/src/main/resources/MATE-INF" />
@@ -258,11 +270,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EurekaProducerApplication" />
         <item itemvalue="HTTP Request.EurekaConsumersApplication#2" />
         <item itemvalue="HTTP Request.EurekaProducerApplication#1" />
         <item itemvalue="HTTP Request.EurekaConsumersApplication#3" />
         <item itemvalue="HTTP Request.EurekaConsumersApplication#1" />
-        <item itemvalue="Spring Boot.EurekaProducerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +342,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="26985000" />
+      <workItem from="1587289151404" duration="33305000" />
     </task>
     <servers />
   </component>
