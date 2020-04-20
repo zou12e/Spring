@@ -33,7 +33,7 @@
 |  springcloud-client-api        |   服务提供者API    |        |  Ribbon + Hystrix调用 |  |
 |  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix | 8081 |
 |  springcloud-eureka-producer   |   服务提供者    |           |                 | 8089 |
-|  springcloud-gateway           |   网关         |           | 动态路由、 熔断、限流 | 8900 |
+|  springcloud-gateway           |   网关         |           | 动态路由、 熔断、限流 | 8800 |
  
  ***
  
