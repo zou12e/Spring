@@ -94,7 +94,7 @@
   刷新配置
   
   feign调用第三方接口示例
-  http://localhost:8800/consumers/ifeign/userInfo
+  http://localhost:8800/consumers/feign/userInfo
   
   
   ribbon + hystrix调用接口示例
