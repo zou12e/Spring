@@ -30,6 +30,7 @@
 |  project-error                 |   错误信息      |          |  开发错误信息     |
 |  springcloud-config            |   配置中心      |          |  消息总线、RabbitMQ |
 |  springcloud-eureka            |   注册中心      |          |                |
+|  springcloud-client-api        |   服务提供者API    |        |  Ribbon + Hystrix调用 |
 |  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix |
 |  springcloud-eureka-producer   |   服务提供者    |           |                 |
 |  springcloud-gateway           |   网关         |           | 动态路由、 熔断、限流 |
@@ -52,10 +53,10 @@
  spring-cloud-bus: 消息总线，通过webhook发现配置中心内容改变，通知相关微服务，即时更新
  ````
  ````
- feign: 微服务之间的调用，封装了Http调用流程
+ feign: 微服务之间的调用，封装了Http调用流程，简化模版代码
  ````
  ````
- hystrix: 熔断器， 微服务之间调用失败策略
+ hystrix: 熔断器， 微服务之间调用策略，提供服务隔离机制，防止雪崩效应
  ````
  ````
  hystrix-dashboard:  监控单个微服务hystrix的工具，包含请求响应时间, 请求成功率等数据
