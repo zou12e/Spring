@@ -24,16 +24,16 @@
 
 ### 项目目录
 
-|  目录                           |      信息      |  其他     | 备注           |
-|--------------------------------|----------------|----------|----------------|
-|  config                        |   配置信息      |          |  服务统一配置信息 |
-|  project-error                 |   错误信息      |          |  开发错误信息     |
-|  springcloud-config            |   配置中心      |          |  消息总线、RabbitMQ |
-|  springcloud-eureka            |   注册中心      |          |                |
-|  springcloud-client-api        |   服务提供者API    |        |  Ribbon + Hystrix调用 |
-|  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix |
-|  springcloud-eureka-producer   |   服务提供者    |           |                 |
-|  springcloud-gateway           |   网关         |           | 动态路由、 熔断、限流 |
+|  目录                           |      信息      |  其他     | 备注           |  端口  |
+|--------------------------------|----------------|----------|----------------|------|
+|  config                        |   配置信息      |          |  服务统一配置信息 |      |
+|  project-error                 |   错误信息      |          |  开发错误信息     |     |
+|  springcloud-config            |   配置中心      |          |  消息总线、RabbitMQ |  8900 |
+|  springcloud-eureka            |   注册中心      |          |                |    8761 |
+|  springcloud-client-api        |   服务提供者API    |        |  Ribbon + Hystrix调用 |  |
+|  springcloud-eureka-consumers  |   服务消费者    |           |  Feign, Hystrix | 8081 |
+|  springcloud-eureka-producer   |   服务提供者    |           |                 | 8089 |
+|  springcloud-gateway           |   网关         |           | 动态路由、 熔断、限流 | 8900 |
  
  ***
  
@@ -72,3 +72,40 @@
  
  ````
  
+  ### 启动流程
+  ````
+  1. 先启动服务中心 springcloud-eureka
+  2. 再启动配置中心 springcloud-config 。
+  3. 在启动网关服务 springcloud-gateway
+  4. 最后启动 springcloud-eureka-producer服务者 springcloud-eureka-consumers消费者
+  
+  查看Eureka服务启动情况
+  http://localhost:8761/
+  
+  查看RabbitMQ情况
+  http://127.0.0.1:15672
+  
+  获取配置信息demo
+  http://localhost:8800/producer/mode
+  
+  
+  修改配置springcloud-config后 可通过
+  curl -X POST http://localhost:8900/actuator/bus-refresh
+  刷新配置
+  
+  feign调用第三方接口示例
+  http://localhost:8800/consumers/ifeign/userInfo
+  
+  
+  ribbon + hystrix调用接口示例
+  http://localhost:8800/consumers/userList
+  
+  
+  feign调用示例
+  http://localhost:8800/consumers/feign/userList
+  
+  
+  封装feign调用示例
+  http://localhost:8800/consumers/ifeign/userList
+  
+  ````
