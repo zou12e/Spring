@@ -53,7 +53,7 @@
  spring-cloud-bus: 消息总线，通过webhook发现配置中心内容改变，通知相关微服务，即时更新
  ````
  ````
- feign: 微服务之间的调用，封装了Http调用流程，简化模版代码
+ feign: 微服务之间的调用，封装了ribbon进行负载，通过http方式调用，简化模版代码
  ````
  ````
  hystrix: 熔断器， 微服务之间调用策略，提供服务隔离机制，防止雪崩效应
@@ -75,7 +75,7 @@
   ### 启动流程
   ````
   1. 先启动服务中心 springcloud-eureka
-  2. 再启动配置中心 springcloud-config 。
+  2. 再启动配置中心 springcloud-config
   3. 在启动网关服务 springcloud-gateway
   4. 最后启动 springcloud-eureka-producer服务者 springcloud-eureka-consumers消费者
   
@@ -90,6 +90,7 @@
   
   
   修改配置springcloud-config后 可通过
+  # 可配置webhook配置触发
   curl -X POST http://localhost:8900/actuator/bus-refresh
   刷新配置
   
