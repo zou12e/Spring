@@ -11,31 +11,15 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 
-/**
- * @Author: shiyao.wei
- * @Date: 2019/7/2 11:25
- * @Version: 1.0
- * @Desc:
- */
 @RestController
 public class ConsumersController {
 
     @Autowired
     ProducerService producerService;
 
-    @Autowired
-    RestTemplate restTemplate;
-
     @PostMapping("/login")
     public UserDTO login(@RequestBody UserVO vo) {
         return producerService.login(vo);
-    }
-
-    @PostMapping("/login2")
-    public UserDTO login2(@RequestBody UserVO vo) {
-//        return producerService.login(vo);
-        String url = IProducerServiceUrl.PREFIX + IProducerServiceUrl.LOGIN;
-        return restTemplate.postForObject(url, vo, UserDTO.class);
     }
 
     @RequestMapping("/userList")

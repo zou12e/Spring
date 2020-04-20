@@ -20,25 +20,6 @@ import java.util.List;
 @RefreshScope
 public class UserController implements IProducerService {
 
-    @Value("${mode}")
-    private String mode;
-
-    @RequestMapping("/hello")
-    public String hello(@RequestParam String name) {
-        return "hello "+name+"，producer is ready";
-    }
-
-    @RequestMapping("/hello1")
-    public String hello1() {
-        return "hello producer is ready";
-    }
-
-
-    @RequestMapping("/hello2")
-    public String from() {
-        return this.mode;
-    }
-
 
     @Autowired
     UserMapper userMapper;
@@ -67,7 +48,6 @@ public class UserController implements IProducerService {
     public UserDTO getUserById(@ModelAttribute UserVO user) {
         return EntityCopyMapper.INSTANCE.toUserDTO(userMapper.getUser(user.getId()));
     }
-
 
     @PostMapping("/add")
     public Long save(@RequestBody User user) {
