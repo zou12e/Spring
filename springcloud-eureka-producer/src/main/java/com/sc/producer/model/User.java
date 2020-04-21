@@ -23,6 +23,16 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 public class User {
 
+    /**
+     *  AUTO, 自增
+     *  NONE,
+     *  INPUT,
+     *  ASSIGN_ID,
+     *  ASSIGN_UUID, String UUID
+     *  ID_WORKER  Long 雪花算法
+     *  ID_WORKER_STR String 雪花算法
+     *  UUID String UUID
+     */
     @TableId(type = IdType.AUTO)
     private int id;
 

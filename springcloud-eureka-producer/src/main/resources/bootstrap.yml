@@ -1,34 +1,42 @@
 server:
   port: 8089
+
 spring:
   application:
     name: producer
-  cloud:
-    config:
-      name: springcloud-config
-      profile: dev
-      label: master
-      discovery:
-        enabled: true
-        serviceId: spring-cloud-config
-#  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
-#    username: root
-#    password: zrz2623396
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    type: com.zaxxer.hikari.HikariDataSource
-#    hikari:
-#      auto-commit: true
-#      minimum-idle: 2
-#      idle-timeout: 60000
-#      connection-timeout: 30000
-#      max-lifetime: 1800000
-#      pool-name: DatebookHikariCP
-#      maximum-pool-size: 5
-#mybatis:
-#  type-aliases-package: com.sc.producer.model
-#  config-location: classpath:/mybatis/mybatis-config.xml
-#  mapper-locations: classpath:/mybatis/mapper/*.xml
+#  cloud:
+#    config:
+#      name: springcloud-config
+#      profile: dev
+#      label: master
+#      discovery:
+#        enabled: true
+#        serviceId: spring-cloud-config
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: zrz2623396
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      minimum-idle: 2
+      idle-timeout: 60000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      pool-name: DatebookHikariCP
+      maximum-pool-size: 5
+  redis:
+    host: 127.0.0.1
+    password:
+    port: 6379
+
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
 
 #         /{application}/{profile}[/{label}]
 #         /{application}-{profile}.yml

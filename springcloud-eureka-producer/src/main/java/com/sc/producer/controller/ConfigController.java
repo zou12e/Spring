@@ -22,12 +22,12 @@ import java.util.List;
  */
 @RefreshScope
 public class ConfigController {
-    @Value("${mode}")
-    private String mode;
-
-    @RequestMapping("/mode")
-    public String from() {
-        return "config：" + this.mode;
-    }
+//    @Value("${mode}")
+//    private String mode;
+//
+//    @RequestMapping("/mode")
+//    public String from() {
+//        return "config：" + this.mode;
+//    }
 
 }

@@ -2,6 +2,8 @@ package com.sc.service.user.dto;
 
 import lombok.Data;
 
+import java.sql.Timestamp;
+
 @Data
 public class UserDTO {
 
@@ -15,4 +17,7 @@ public class UserDTO {
 
     private String password;
 
+    private Timestamp createTime;
+
+    private Timestamp updateTime;
 }
