@@ -26,7 +26,7 @@ public class IFeignUserController implements IFeignProducerServiceClient {
 
     public UserDTO login(@RequestBody UserVO user) {
         User loginUser = userMapper.login(EntityCopyMapper.INSTANCE.toUser(user));
-123        stringRedisTemplate.opsForValue().set(String.valueOf(loginUser.getId()), loginUser.getName());
+        stringRedisTemplate.opsForValue().set(String.valueOf(loginUser.getId()), loginUser.getName());
         return EntityCopyMapper.INSTANCE.toUserDTO(loginUser);
     }
 
