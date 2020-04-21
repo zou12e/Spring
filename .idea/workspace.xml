@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mappers/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/spy.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/test/java/com/sc/producer/MysqlGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/config/MyBatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/ConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/IFeignUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/IFeignUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/dto/EntityCopyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/dto/EntityCopyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/handler/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/handler/MyMetaObjectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/test/java/com/sc/producer/SpringcloudEurekaProducerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/test/java/com/sc/producer/SpringcloudEurekaProducerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringcloudEurekaProducerApplicationTests.getList">
+  <component name="RunManager" selected="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage">
     <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
       <module name="springcloud-eureka-consumers" />
@@ -373,8 +353,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
         <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage" />
+        <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
         <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.delete" />
         <item itemvalue="HTTP Request.EurekaProducerApplication#3" />
@@ -404,11 +384,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6d907f7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@96275d1b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -466,7 +441,7 @@
       <workItem from="1587284588099" duration="4394000" />
       <workItem from="1587289151404" duration="47763000" />
       <workItem from="1587458889627" duration="1598000" />
-      <workItem from="1587460508185" duration="17447000" />
+      <workItem from="1587460508185" duration="17972000" />
     </task>
     <servers />
   </component>

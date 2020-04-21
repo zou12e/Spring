@@ -20,4 +20,21 @@
         id, name, age, email, password, version, deleted, create_time, update_time
     </sql>
 
+
+    <select id="login" parameterType="com.sc.producer.model.User" resultMap="BaseResultMap" >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM
+        user
+        WHERE name = #{name} and password = #{password}
+    </select>
+
+    <select id="getUser" parameterType="java.lang.Integer" resultMap="BaseResultMap" >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM
+        user
+        WHERE id = #{id}
+    </select>
+
 </mapper>
