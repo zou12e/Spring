@@ -36,7 +36,7 @@ public class FeignUserController implements IProducerService {
 
     @GetMapping(IProducerServiceUrl.GETUSERS)
     public List<UserDTO> getUsers() {
-        return EntityCopyMapper.INSTANCE.toListUserDTO(userMapper.getAll());
+        return EntityCopyMapper.INSTANCE.toListUserDTO(userMapper.selectList(null));
     }
 
     @GetMapping(IProducerServiceUrl.GETUSER)
@@ -50,17 +50,17 @@ public class FeignUserController implements IProducerService {
     }
 
     @PostMapping("/add")
-    public Long save(@RequestBody User user) {
-        return userMapper.insertUser(user);
+    public Integer save(@RequestBody User user) {
+        return userMapper.insert(user);
     }
 
     @PostMapping("/update")
-    public Long update(@RequestBody User user) {
-        return userMapper.updateUser(user);
+    public Integer update(@RequestBody User user) {
+        return userMapper.updateById(user);
     }
 
     @DeleteMapping("/delete/{id}")
-    public Long delete(@PathVariable("id") Integer id) {
-        return userMapper.deleteUser(id);
+    public Integer delete(@PathVariable("id") Integer id) {
+        return userMapper.deleteById(id);
     }
 }

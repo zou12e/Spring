@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan
 public class Config {
 
+
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate(RestTemplateBuilder builder) {

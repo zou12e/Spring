@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/api/IFeignProducerServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IFeignProducerServiceUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceClientFallBackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceFallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerServiceFallBackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/IFeignConsumersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/IFeignUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-client-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IProducerServiceUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/constant/IProducerServiceUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/IFeignProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/service/user/FeignProducerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/FeignConsumersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/java/com/sc/consumers/controller/FeignConsumersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-client-api/src/main/java/com/sc/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/IFeignUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/IFeignUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +29,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mybatis: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -63,6 +80,7 @@
   <component name="ProjectId" id="1ZbLXTQCDZ7YScYM6UT0uj8E7Cj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -303,6 +321,15 @@
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2545a974" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63e4a491" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63e4a491" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@685d80d8" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
           </expand>
           <select />
         </treeState>
@@ -342,7 +369,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="33305000" />
+      <workItem from="1587289151404" duration="39238000" />
     </task>
     <servers />
   </component>

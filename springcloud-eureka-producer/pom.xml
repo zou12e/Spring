@@ -32,7 +32,7 @@
         <!-- SpringCloud -->
         <spring-cloud.version>Finchley.SR4</spring-cloud.version>
         <mybatis.version>2.1.0</mybatis.version>
-        <mybatis-plus.version>2.1.0</mybatis-plus.version>
+        <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>
         <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
     </properties>
 
@@ -64,18 +64,17 @@
         </dependency>
 
         <!-- mybatis-plus -->
-<!--        <dependency>-->
-<!--            <groupId>com.baomidou</groupId>-->
-<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
-<!--            <version>3.3.1.tmp</version>-->
-<!--        </dependency>-->
-
-        <!-- mybatis -->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis.version}</version>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
         </dependency>
+        <!-- mybatis -->
+<!--        <dependency>-->
+<!--            <groupId>org.mybatis.spring.boot</groupId>-->
+<!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--            <version>${mybatis.version}</version>-->
+<!--        </dependency>-->
 
 
         <!-- mysql -->

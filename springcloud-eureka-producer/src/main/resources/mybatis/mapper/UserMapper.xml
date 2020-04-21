@@ -13,11 +13,6 @@
         id, name, age, email
     </sql>
 
-    <select id="getAll" resultMap="BaseResultMap"  >
-        SELECT
-        <include refid="Base_Column_List" />
-        FROM user
-    </select>
 
     <select id="login" parameterType="com.sc.producer.model.User" resultMap="BaseResultMap" >
         SELECT
@@ -35,30 +30,5 @@
         WHERE id = #{id}
     </select>
 
-    <insert id="insertUser" parameterType="com.sc.producer.model.User">
-        INSERT INTO
-        user
-        (id, name, age, email, password)
-        VALUES
-        (#{id}, #{name}, #{age}, #{email}, #{password})
-    </insert>
-
-    <update id="updateUser" parameterType="com.sc.producer.model.User">
-        UPDATE
-        user
-        SET
-        <if test="name != null">nick_name = #{name},</if>
-        <if test="age != null">age = #{age},</if>
-        <if test="email != null">email = #{email}</if>
-        WHERE
-        id = #{id}
-    </update>
-
-    <delete id="deleteUser" parameterType="java.lang.Integer">
-       DELETE FROM
-       		 user
-       WHERE
-       		 id = #{id}
-    </delete>
 
 </mapper>

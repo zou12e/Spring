@@ -1,5 +1,6 @@
 package com.sc.producer.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.sc.producer.model.User;
 
 import java.util.List;
@@ -8,19 +9,19 @@ import java.util.List;
  * @Version: 1.0
  * @Desc:
  */
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
 
-    List<User> getAll();
-
+//    List<User> getAll();
+//
     User login(User user);
-
+//
     User getUser(Integer id);
-
-    Long insertUser(User user);
-
-    Long updateUser(User user);
-
-    Long deleteUser(Integer id);
+//
+//    Long insertUser(User user);
+//
+//    Long updateUser(User user);
+//
+//    Long deleteUser(Integer id);
 
 //    2020-03-31 23:20:57.757 ERROR 25041 --- [ost-startStop-1]
 //    o.s.b.web.embedded.tomcat.TomcatStarter  :

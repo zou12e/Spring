@@ -31,7 +31,7 @@ public class IFeignUserController implements IFeignProducerServiceClient {
     }
 
     public List<UserDTO> getUsers() {
-        return EntityCopyMapper.INSTANCE.toListUserDTO(userMapper.getAll());
+        return EntityCopyMapper.INSTANCE.toListUserDTO(userMapper.selectList(null));
     }
 
 
