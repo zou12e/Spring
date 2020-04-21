@@ -126,3 +126,16 @@ Spring Boot >= 1.4 Spring Boot不再自动定义一个RestTemplate，而是定�
 
 
 ````
+
+
+````
+ Property 'configuration' and 'configLocation' can not specified with together
+ 
+ yml配置
+ mybatis-plus.config-location
+ 与
+ mybatis-plus.configuration.log-impl
+配置冲突(config-location  与  configuration)
+删除一个即可
+````
+
