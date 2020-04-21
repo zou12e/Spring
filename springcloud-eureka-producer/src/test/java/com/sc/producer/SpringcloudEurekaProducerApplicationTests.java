@@ -1,8 +1,8 @@
 package com.sc.producer;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.sc.producer.mapper.UserMapper;
-import com.sc.producer.model.User;
+import com.sc.producer.entity.User;
+import com.sc.producer.mappers.UserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +43,12 @@ public class SpringcloudEurekaProducerApplicationTests {
         Page<User> page = new Page<>(1, 2);
         userMapper.selectPage(page, null);
         page.getRecords().forEach(System.out::println);
+    }
+
+    @Test
+    public void delete() {
+        userMapper.deleteById(1);
+        System.out.println( userMapper.selectById(1));
+
     }
 }

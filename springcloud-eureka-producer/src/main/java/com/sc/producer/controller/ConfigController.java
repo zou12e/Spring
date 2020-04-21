@@ -3,7 +3,6 @@ package com.sc.producer.controller;
 import com.sc.api.IProducerService;
 import com.sc.constant.IProducerServiceUrl;
 import com.sc.producer.dto.EntityCopyMapper;
-import com.sc.producer.mapper.UserMapper;
 import com.sc.producer.model.User;
 import com.sc.service.user.dto.UserDTO;
 import com.sc.service.user.dto.UserVO;

@@ -1,14 +1,13 @@
 package com.sc.producer.dto;
 
 
-import com.sc.producer.model.User;
+import com.sc.producer.entity.User;
 import com.sc.service.user.dto.UserDTO;
 import com.sc.service.user.dto.UserVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
-
 
 @Mapper
 public interface EntityCopyMapper {

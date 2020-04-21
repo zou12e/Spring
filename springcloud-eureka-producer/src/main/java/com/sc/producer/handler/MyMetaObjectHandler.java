@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Slf4j
 @Component
-public class MyMetaObjectHandler  implements MetaObjectHandler {
+public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         log.info("start insert fill");
@@ -23,5 +23,5 @@ public class MyMetaObjectHandler  implements MetaObjectHandler {
     public void updateFill(MetaObject metaObject) {
         log.info("start update fill");
         this.setFieldValByName("updateTime", new Timestamp(System.currentTimeMillis()), metaObject);
-        }
-        }
+    }
+}
