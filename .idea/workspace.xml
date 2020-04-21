@@ -307,6 +307,11 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6f15c78" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@28a0b00c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
@@ -362,7 +367,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="39577000" />
+      <workItem from="1587289151404" duration="39914000" />
     </task>
     <servers />
   </component>
