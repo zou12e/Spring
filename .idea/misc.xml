@@ -7,10 +7,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-eureka-consumers/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-client-api/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" />
       </list>
     </option>
   </component>

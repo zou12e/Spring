@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-consumers/src/test/java/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/handler/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.factorypath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/model/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +90,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZbLXTQCDZ7YScYM6UT0uj8E7Cj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -81,7 +103,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-client-api/src/main/resources/MATE-INF" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test/com.sc.test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,37 +112,33 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.sc" />
       <recent name="com.sc.service.user" />
       <recent name="com.sc.consumers.controller" />
       <recent name="com.sc.constant" />
-      <recent name="com.sc.api" />
-      <recent name="com.sc.producer.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test" />
+      <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test/java" />
+      <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main" />
+      <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test/java/com/sc" />
       <recent name="$PROJECT_DIR$/springcloud-client-api/src/main/resources/MATE-INF" />
-      <recent name="$PROJECT_DIR$/springcloud-gateway/src/main/resources" />
-      <recent name="$PROJECT_DIR$/springcloud-config/src/main/resources" />
-      <recent name="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/controller" />
-      <recent name="$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/gateway/remote" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://127.0.0.1:8081/feign/userById" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://127.0.0.1:8089/getUserById" />
@@ -133,6 +152,21 @@
             </list>
           </option>
           <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:8089/add" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;name&quot;: &quot;test&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:8081/feign/userById" />
+          <option name="urlPath" value="" />
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
@@ -186,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.EurekaConsumersApplication#2">
+  <component name="RunManager" selected="Spring Boot.EurekaProducerApplication">
     <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
       <module name="springcloud-eureka-consumers" />
@@ -200,17 +234,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaConsumersApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/EurekaConsumersApplication.http">
-      <method v="2" />
-    </configuration>
     <configuration name="EurekaConsumersApplication#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/EurekaConsumersApplication.http" index="2">
-      <method v="2" />
-    </configuration>
-    <configuration name="EurekaConsumersApplication#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/EurekaConsumersApplication.http" index="3">
       <method v="2" />
     </configuration>
     <configuration name="EurekaProducerApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/EurekaProducerApplication.http">
       <method v="2" />
+    </configuration>
+    <configuration name="EurekaProducerApplication#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/EurekaProducerApplication.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.SpringCloudConfigApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springcloud-eureka" />
@@ -237,77 +276,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-eureka-producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaProducerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaProducerApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="EurekaProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springcloud-eureka-producer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.EurekaProducerApplication" />
-      <option name="PROGRAM_PARAMETERS" value="--server.port=8090" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringCloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springcloud-config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.SpringCloudConfigApplication" />
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.SpringCloudGatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
+      <item itemvalue="HTTP Request.EurekaProducerApplication#1" />
+      <item itemvalue="HTTP Request.EurekaConsumersApplication#2" />
+      <item itemvalue="HTTP Request.EurekaProducerApplication#2" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ConfigApplication" />
+      <item itemvalue="Spring Boot.EurekaProducerApplication" />
       <item itemvalue="Spring Boot.EurekaApplication2" />
       <item itemvalue="Spring Boot.EurekaApplication" />
-      <item itemvalue="Spring Boot.EurekaProducerApplication2" />
       <item itemvalue="Spring Boot.EurekaConsumersApplication" />
-      <item itemvalue="Spring Boot.EurekaProducerApplication" />
-      <item itemvalue="HTTP Request.EurekaProducerApplication#1" />
-      <item itemvalue="HTTP Request.EurekaConsumersApplication#1" />
-      <item itemvalue="HTTP Request.EurekaConsumersApplication#2" />
-      <item itemvalue="HTTP Request.EurekaConsumersApplication#3" />
-      <item itemvalue="Spring Boot.SpringCloudConfigApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaProducerApplication" />
-        <item itemvalue="HTTP Request.EurekaConsumersApplication#2" />
         <item itemvalue="HTTP Request.EurekaProducerApplication#1" />
-        <item itemvalue="HTTP Request.EurekaConsumersApplication#3" />
-        <item itemvalue="HTTP Request.EurekaConsumersApplication#1" />
+        <item itemvalue="HTTP Request.EurekaProducerApplication#2" />
+        <item itemvalue="HTTP Request.EurekaConsumersApplication#2" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.15169811" />
+        <option name="contentProportion" value="0.2518968" />
         <treeState>
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e1b520aa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6f15c78" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -318,15 +331,6 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c7963eaa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2545a974" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63e4a491" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63e4a491" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@685d80d8" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -367,7 +371,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="40625000" />
+      <workItem from="1587289151404" duration="47763000" />
     </task>
     <servers />
   </component>
@@ -387,6 +391,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -399,6 +406,11 @@
           <url>file://$PROJECT_DIR$/springcloud-gateway/src/main/java/com/sc/filter/AccessGatewayFilter.java</url>
           <line>49</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springcloud-eureka-producer1/src/main/java/com/sc/producer/controller/FeignUserController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
