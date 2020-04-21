@@ -292,7 +292,7 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.2709434" />
+        <option name="contentProportion" value="0.15169811" />
         <treeState>
           <expand>
             <path>
@@ -367,7 +367,7 @@
       <workItem from="1586855441020" duration="351000" />
       <workItem from="1586934587882" duration="5496000" />
       <workItem from="1587284588099" duration="4394000" />
-      <workItem from="1587289151404" duration="39914000" />
+      <workItem from="1587289151404" duration="40625000" />
     </task>
     <servers />
   </component>
