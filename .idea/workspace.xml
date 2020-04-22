@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/config/RabbitmqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/RabbitmqController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/mq/ReceiveHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/EurekaProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/entity/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -394,11 +388,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@520a61a1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@826ac76a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
@@ -452,7 +441,7 @@
       <workItem from="1587284588099" duration="4394000" />
       <workItem from="1587289151404" duration="47763000" />
       <workItem from="1587458889627" duration="1598000" />
-      <workItem from="1587460508185" duration="34554000" />
+      <workItem from="1587460508185" duration="34907000" />
     </task>
     <servers />
   </component>
