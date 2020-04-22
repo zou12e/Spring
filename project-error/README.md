@@ -139,3 +139,17 @@ Spring Boot >= 1.4 Spring Boot不再自动定义一个RestTemplate，而是定�
 删除一个即可
 ````
 
+
+````
+Requested bean is currently in creation: Is there an unresolvable circular reference?
+循环注入
+
+@Bean
+RabbitTemplate rabbitTemplate() {}
+ 
+@Autowired
+RabbitTemplate rabbitTemplate;
+
+冲突， 去掉一个即可
+
+````
