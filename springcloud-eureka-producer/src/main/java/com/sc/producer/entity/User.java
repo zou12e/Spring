@@ -67,6 +67,20 @@ public class User extends Model<User> {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", version=" + version +
+                ", deleted=" + deleted +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                '}';
+    }
 
     @Override
     protected Serializable pkVal() {
