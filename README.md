@@ -88,6 +88,9 @@
   查看RabbitMQ情况
   http://127.0.0.1:15672
   
+  Swagger-ui
+  http://localhost:8089/swagger-ui.html
+  
   获取配置信息demo
   http://localhost:8800/producer/mode
   
