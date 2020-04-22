@@ -36,7 +36,7 @@ public class MysqlGenerator {
         gc.setOutputDir(root + "/src/main/java");
         gc.setAuthor("Jeff");
         gc.setOpen(true);
-        gc.setSwagger2(false);
+        gc.setSwagger2(true);
         gc.setFileOverride(false);// 是否覆盖文件
         gc.setActiveRecord(true);// 开启 activeRecord 模式
         gc.setEnableCache(false);// XML 二级缓存
