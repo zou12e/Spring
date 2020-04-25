@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 三坐标 -->
+    <groupId>com.sc</groupId>
+    <artifactId>springcloud-netty</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <!-- 工程名称描述 -->
+    <name>springcloud-netty</name>
+    <description>Demo project for Spring Boot</description>
+
+
+    <!-- 继承父 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.8.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <!-- 在 properties下声明相应的版本信息，然后在 dependency 下引用的时候用 ${} 就可以引入该版本 jar 包了 -->
+    <properties>
+        <!-- 编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- jdk -->
+        <java.version>1.8</java.version>
+        <!-- SpringBoot -->
+        <platform-bom.version>Cairo-SR7</platform-bom.version>
+        <!-- SpringCloud -->
+        <spring-cloud.version>Finchley.SR4</spring-cloud.version>
+        <mybatis.version>2.1.0</mybatis.version>
+        <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>
+        <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
+        <swagger.version>2.7.0</swagger.version>
+        <netty.version>4.1.25.Final</netty.version>
+
+    </properties>
+
+
+
+
+    <dependencies>
+
+        <!--
+        支持bootstrap.yml配置
+        如果加入spring-cloud-starter-config 就不需要了
+          -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-context</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- spring-cloud-starter-config -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- mybatis-plus -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+
+        <!-- mybatis-plus-generator -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>8.0.19</version>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- netty -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+
+    <!-- 依赖 jar 包版本管理的管理器 -->
+    <!-- 如果 dependencies 里的 dependency 自己没有声明 version 元素，那么 maven 就此处来找版本声明。 -->
+    <!-- 如果有，就会继承它；如果没有就会报错，告诉你没有版本信息 -->
+    <!-- 优先级：如果 dependencies 里的 dependency 已经声明了版本信息，就不会生效此处的版本信息了 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringBoot -->
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${platform-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- SpringCloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

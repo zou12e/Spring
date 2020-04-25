@@ -12,6 +12,7 @@
         <module name="springcloud-client-api" />
         <module name="springcloud-eureka-producer" />
         <module name="springcloud-eureka-consumers" />
+        <module name="springcloud-netty" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +24,7 @@
       <module name="springcloud-eureka-consumers" options="-parameters" />
       <module name="springcloud-eureka-producer" options="-parameters" />
       <module name="springcloud-gateway" options="-parameters" />
+      <module name="springcloud-netty" options="-parameters" />
     </option>
   </component>
 </project>

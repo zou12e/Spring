@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/CustomHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/ServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/SpringCloudNettyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/MysqlGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/SpringcloudNettyApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/springcloud-config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/springcloud-config-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/spy.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/spy.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +104,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test/com.sc.test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-netty/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,27 +113,28 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.14899713" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sc.netty" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sc.netty.config" />
+      <recent name="com.sc.netty" />
       <recent name="" />
       <recent name="com.sc" />
       <recent name="com.sc.service.user" />
-      <recent name="com.sc.consumers.controller" />
-      <recent name="com.sc.constant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springcloud-netty/src/main/resources" />
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources" />
+      <recent name="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty" />
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main" />
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test" />
-      <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test/java" />
-      <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/test/java/com/sc" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -209,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MysqlGenerator">
+  <component name="RunManager" selected="JUnit.SpringcloudNettyApplicationTests.contextLoads">
     <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
       <module name="springcloud-eureka-consumers" />
@@ -232,25 +251,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaProducerApplication#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/EurekaProducerApplication.http" index="3">
-      <method v="2" />
-    </configuration>
-    <configuration name="SpringcloudEurekaProducerApplicationTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-eureka-producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sc.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sc.producer" />
-      <option name="MAIN_CLASS_NAME" value="com.sc.producer.SpringcloudEurekaProducerApplicationTests" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -282,6 +282,37 @@
       <option name="PACKAGE_NAME" value="com.sc.producer" />
       <option name="MAIN_CLASS_NAME" value="com.sc.producer.SpringcloudEurekaProducerApplicationTests" />
       <option name="METHOD_NAME" value="selectPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudNettyApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sc.netty" />
+      <option name="MAIN_CLASS_NAME" value="com.sc.netty.SpringcloudNettyApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudNettyApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sc.netty" />
+      <option name="MAIN_CLASS_NAME" value="com.sc.netty.SpringcloudNettyApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -336,27 +367,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NettyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-netty" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sc.netty.SpringCloudNettyApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
+      <item itemvalue="Application.MysqlGenerator" />
+      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage" />
+      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
       <item itemvalue="Spring Boot.EurekaConsumersApplication" />
-      <item itemvalue="HTTP Request.EurekaProducerApplication#3" />
-      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage" />
-      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.delete" />
-      <item itemvalue="Application.MysqlGenerator" />
-      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication2" />
+      <item itemvalue="Spring Boot.NettyApplication" />
+      <item itemvalue="JUnit.SpringcloudNettyApplicationTests" />
+      <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SpringcloudNettyApplicationTests" />
         <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage" />
         <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
-        <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.delete" />
-        <item itemvalue="HTTP Request.EurekaProducerApplication#3" />
       </list>
     </recent_temporary>
   </component>
@@ -373,22 +413,22 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.23471698" />
+          <option name="contentProportion" value="0.40226415" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27613caf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6d907f7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27613caf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6cb1ac45" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4acada2c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@826ac76a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27613caf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e26a839a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -441,7 +481,9 @@
       <workItem from="1587284588099" duration="4394000" />
       <workItem from="1587289151404" duration="47763000" />
       <workItem from="1587458889627" duration="1598000" />
-      <workItem from="1587460508185" duration="34907000" />
+      <workItem from="1587460508185" duration="46641000" />
+      <workItem from="1587804682303" duration="1570000" />
+      <workItem from="1587806281918" duration="4331000" />
     </task>
     <servers />
   </component>
