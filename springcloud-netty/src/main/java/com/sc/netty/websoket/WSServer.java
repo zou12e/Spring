@@ -41,7 +41,7 @@ public class WSServer {
 
     public void start() {
         this.channelFuture =  serverBootstrap.bind(7070);
-
+        System.err.println("serverBootstrap start ");
     }
 
 

@@ -37,7 +37,7 @@
         <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
         <swagger.version>2.7.0</swagger.version>
         <netty.version>4.1.25.Final</netty.version>
-
+        <fastjson.version>1.2.68</fastjson.version>
     </properties>
 
 
@@ -105,6 +105,12 @@
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>${netty.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
 
 

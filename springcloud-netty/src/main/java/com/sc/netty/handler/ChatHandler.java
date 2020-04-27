@@ -1,5 +1,6 @@
 package com.sc.netty.handler;
 
+import com.alibaba.fastjson.JSON;
 import com.sc.netty.websoket.data.ChatMsg;
 import com.sc.netty.websoket.data.DataContent;
 import com.sc.netty.websoket.data.MsgActionEnum;
@@ -39,21 +40,20 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         Channel currentChannel = ctx.channel();
 
         // JsonUtils
-        DataContent dataContent = null;
+        DataContent dataContent = JSON.parseObject(content, DataContent.class);
+        ChatMsg chatMsg = dataContent.getChatMsg();
         int action = dataContent.getAction();
         if ( MsgActionEnum.CONNECT.type == action ) {
             Integer senderId =  dataContent.getChatMsg().getSenderID();
-
             UserChannelRel.put(senderId, currentChannel);
-
         } else if ( MsgActionEnum.CHAT.type == action ) {
-            ChatMsg chatMsg  =  dataContent.getChatMsg();
+            dataContent.getChatMsg();
 
-            Channel receiverChannel =  UserChannelRel.get(chatMsg.getReceiverID();
+            Channel receiverChannel =  UserChannelRel.get(chatMsg.getReceiverID());
             if (null != receiverChannel) {
                 Channel findChannel = clients.find(receiverChannel.id());
                 if (null != findChannel) {
-                    TextWebSocketFrame sendMsh = new TextWebSocketFrame(chatMsg.getMsg());
+                    TextWebSocketFrame sendMsh = new TextWebSocketFrame(chatMsg.getSenderID() + ":" + chatMsg.getMsg());
                     receiverChannel.writeAndFlush(sendMsh);
                 }
             }
@@ -75,13 +75,16 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
                 2.4 心跳类型
         **/
 
-        TextWebSocketFrame textWebSocketFrame =
-                new TextWebSocketFrame(LocalDateTime.now() +": " + content);
+//        TextWebSocketFrame textWebSocketFrame  =
+//                new TextWebSocketFrame("");
 
+//        if (MsgActionEnum.CHAT.type == action) {
+//            new TextWebSocketFrame(chatMsg.getSenderID() + ": " + chatMsg.getMsg());
+//        }
 //        for (Channel client : clients) {
 //            client.writeAndFlush(textWebSocketFrame);
 //        }
-        clients.writeAndFlush(textWebSocketFrame);
+//        clients.writeAndFlush(textWebSocketFrame);
     }
 
 

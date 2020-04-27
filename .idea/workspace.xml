@@ -2,45 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/NettyBooter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/ChatMsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/FriendsRequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/MyFriendsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/ChatMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/FriendsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/MyFriends.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/CustomHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/ChatMsgMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/FriendsRequestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/MyFriendsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/ChatMsgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/FriendsRequestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/MyFriendsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/ChatMsgServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/FriendsRequestServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/MyFriendsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/WSServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/ChatMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/DataContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/MsgActionEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/UserChannelRel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/ChatMsgMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/FriendsRequestMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/MyFriendsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/CustomHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/ChatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/ServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/WSServerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/SpringcloudNettyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/SpringcloudNettyApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/SpringCloudNettyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/SpringCloudNettyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/WSServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/WSServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -427,7 +393,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.13886793" />
+          <option name="contentProportion" value="0.22566038" />
           <treeState>
             <expand>
               <path>
@@ -497,7 +463,7 @@
       <workItem from="1587458889627" duration="1598000" />
       <workItem from="1587460508185" duration="46641000" />
       <workItem from="1587804682303" duration="1570000" />
-      <workItem from="1587806281918" duration="17195000" />
+      <workItem from="1587806281918" duration="18995000" />
     </task>
     <servers />
   </component>
