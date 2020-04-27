@@ -36,7 +36,7 @@
         <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>
         <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
         <swagger.version>2.7.0</swagger.version>
-        <netty.version>4.1.25.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
         <fastjson.version>1.2.68</fastjson.version>
     </properties>
 
