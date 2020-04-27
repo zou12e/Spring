@@ -1,23 +1,23 @@
 package com.sc.netty.handler;
 
 import com.alibaba.fastjson.JSON;
-import com.sc.netty.websoket.data.ChatMsg;
-import com.sc.netty.websoket.data.DataContent;
-import com.sc.netty.websoket.data.MsgActionEnum;
-import com.sc.netty.websoket.data.UserChannelRel;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
+import com.sc.netty.entity.ChatMsg;
+import com.sc.netty.entity.User;
+import com.sc.netty.service.ChatMsgService;
+import com.sc.netty.service.UserService;
+import com.sc.netty.utils.SpringUtil;
+import com.sc.netty.websoket.data.*;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.handler.codec.http.*;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
-import io.netty.util.CharsetUtil;
 import io.netty.util.concurrent.GlobalEventExecutor;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.stream.Collectors;
 
 /**
  * 处理消息的助手类
@@ -33,38 +33,82 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
 
+        UserService userService = (UserService)SpringUtil.getBean("userServiceImpl");
+        ChatMsgService chatMsgService  = (ChatMsgService)SpringUtil.getBean("chatMsgServiceImpl");
+
         // 客户端发送过来的消息
         String content =  msg.text();
         System.out.println("接受的数据：" + content);
-
         Channel currentChannel = ctx.channel();
 
         // JsonUtils
         DataContent dataContent = JSON.parseObject(content, DataContent.class);
-        ChatMsg chatMsg = dataContent.getChatMsg();
+        WSChatMsg wsChatMsg = dataContent.getChatMsg();
+        wsChatMsg.setNow(new Date());
         int action = dataContent.getAction();
         if ( MsgActionEnum.CONNECT.type == action ) {
-            Integer senderId =  dataContent.getChatMsg().getSenderID();
-            UserChannelRel.put(senderId, currentChannel);
-        } else if ( MsgActionEnum.CHAT.type == action ) {
-            dataContent.getChatMsg();
-
-            Channel receiverChannel =  UserChannelRel.get(chatMsg.getReceiverID());
-            if (null != receiverChannel) {
-                Channel findChannel = clients.find(receiverChannel.id());
-                if (null != findChannel) {
-                    TextWebSocketFrame sendMsh = new TextWebSocketFrame(chatMsg.getSenderID() + ":" + chatMsg.getMsg());
-                    receiverChannel.writeAndFlush(sendMsh);
+            User user = null;
+            Integer senderId =  wsChatMsg.getSenderID();
+            if (null == senderId) {
+                user = userService.getUserByNickName(wsChatMsg.getSenderNickname());
+                if (null == user) {
+                    user = new User();
+                    user.setNickname(wsChatMsg.getSenderNickname());
+                    userService.save(user);
                 }
+            } else {
+                user = userService.getById(senderId);
             }
+            wsChatMsg.setSenderID(user.getId());
+            wsChatMsg.setSenderNickname(user.getNickname());
+            UserChannel userChannel = new UserChannel(user, currentChannel);
+            UserChannelRel.put(user.getId(), userChannel);
+
+
+            TextWebSocketFrame sendMsh = new TextWebSocketFrame(JSON.toJSONString(dataContent));
+            currentChannel.writeAndFlush(sendMsh);
+
+            /**
+             * 发送在线列表
+             */
+            sendOnlineList();
+
+        } else if ( MsgActionEnum.CHAT.type == action ) {
+            Integer receiverID = wsChatMsg.getReceiverID();
+            if (null != receiverID && receiverID != 0) {
+                ChatMsg chatMsg = new ChatMsg();
+                chatMsg.setMsg(wsChatMsg.getMsg());
+                chatMsg.setSendUserId(wsChatMsg.getSenderID());
+                chatMsg.setAcceptUserId(wsChatMsg.getReceiverID());
+                chatMsgService.save(chatMsg);
+                UserChannel receiverChannel = UserChannelRel.get(receiverID);
+                if (null != receiverChannel) {
+                    Channel findChannel = clients.find(receiverChannel.getChannel().id());
+                    if (null != findChannel) {
+                        wsChatMsg.setMsgId(chatMsg.getId());
+                        TextWebSocketFrame sendMsh = new TextWebSocketFrame(JSON.toJSONString(dataContent));
+                        receiverChannel.getChannel().writeAndFlush(sendMsh);
+                    }
+                }
+            } else {
+                TextWebSocketFrame sendMsh = new TextWebSocketFrame(JSON.toJSONString(dataContent));
+                clients.writeAndFlush(sendMsh);
+            }
+        } else if ( MsgActionEnum.OFFLINE.type == action ) {
+            UserChannelRel.remove(wsChatMsg.getSenderID());
+
+            /**
+             * 发送在线列表
+             */
+            sendOnlineList();
 
         } else if ( MsgActionEnum.SIGNED.type == action ) {
 
 
-
         }
 
-
+//        TextWebSocketFrame sendMsh = new TextWebSocketFrame(JSON.toJSONString(dataContent));
+//        currentChannel.writeAndFlush(sendMsh);
 
         /**
             1. 获取客户端发来的消息
@@ -75,8 +119,11 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
                 2.4 心跳类型
         **/
 
-//        TextWebSocketFrame textWebSocketFrame  =
-//                new TextWebSocketFrame("");
+
+
+
+//        TextWebSocketFrame sendMsh = new TextWebSocketFrame(JSON.toJSONString(dataContent));
+//        clients.writeAndFlush(sendMsh);
 
 //        if (MsgActionEnum.CHAT.type == action) {
 //            new TextWebSocketFrame(chatMsg.getSenderID() + ": " + chatMsg.getMsg());
@@ -84,7 +131,18 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
 //        for (Channel client : clients) {
 //            client.writeAndFlush(textWebSocketFrame);
 //        }
-//        clients.writeAndFlush(textWebSocketFrame);
+
+    }
+
+    /**
+     * 发送在线列表
+     */
+    private void sendOnlineList() {
+        DataContent dc = new DataContent();
+        dc.setOnlineList(UserChannelRel.MAP.values().stream().map(UserChannel::getUser).collect(Collectors.toList()));
+        dc.setAction(MsgActionEnum.LINELIST.type);
+        TextWebSocketFrame sendMsh = new TextWebSocketFrame(JSON.toJSONString(dc));
+        clients.writeAndFlush(sendMsh);
     }
 
 
@@ -99,6 +157,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
          * 获取客户端channel， 并放入ChannelGroup中进行管理
          */
         clients.add(ctx.channel());
+
     }
 
 
@@ -157,7 +216,6 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
     }
 
 
-
     /**
      * 第7步： 助手类移除
      * @param ctx
@@ -166,9 +224,9 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
     @Override
     public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
         // 当触发handlerRemoved ChannelGroup会自动移除对应channel
-         clients.remove(ctx.channel());
-    }
+        clients.remove(ctx.channel());
 
+    }
 
 
     /**
@@ -206,7 +264,6 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         ctx.channel().close();
         clients.remove(ctx.channel());
     }
-
 
 
 }

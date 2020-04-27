@@ -6,13 +6,17 @@ import java.util.Map;
 
 public class UserChannelRel {
 
-    public static Map<Integer, Channel> MAP = new HashMap<>();
+    public static Map<Integer, UserChannel> MAP = new HashMap<>();
 
-    public static void put(Integer key, Channel value) {
+    public static void put(Integer key, UserChannel value) {
         MAP.put(key, value);
     }
 
-    public static Channel get(Integer key) {
+    public static UserChannel get(Integer key) {
        return MAP.get(key);
+    }
+
+    public static UserChannel remove(Integer key) {
+        return MAP.remove(key);
     }
 }
