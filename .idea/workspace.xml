@@ -2,26 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/CustomHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/ServerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/SpringCloudNettyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/MysqlGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/SpringcloudNettyApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/NettyBooter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/ChatMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/FriendsRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/MyFriendsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/ChatMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/FriendsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/MyFriends.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/CustomHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/ChatMsgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/FriendsRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/MyFriendsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/mappers/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/ChatMsgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/FriendsRequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/MyFriendsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/ChatMsgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/FriendsRequestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/MyFriendsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/WSServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/ChatMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/DataContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/MsgActionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/data/UserChannelRel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/ChatMsgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/FriendsRequestMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/MyFriendsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/spy.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources/spy.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/CustomHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/handler/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/ServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/websoket/WSServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/SpringcloudNettyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-netty/src/test/java/com/sc/netty/SpringcloudNettyApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +92,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -123,11 +143,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sc.netty.websoket.data" />
+      <recent name="com.sc.netty.handler" />
       <recent name="com.sc.netty.config" />
       <recent name="com.sc.netty" />
       <recent name="" />
-      <recent name="com.sc" />
-      <recent name="com.sc.service.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springcloud-netty/src/main/resources" />
@@ -228,13 +248,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringcloudNettyApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.NettyApplication">
     <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
       <module name="springcloud-eureka-consumers" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MysqlGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.netty.MysqlGenerator" />
+      <module name="springcloud-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -255,34 +288,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringcloudEurekaProducerApplicationTests.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-eureka-producer" />
+    <configuration name="WSServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.netty.websoket.WSServer" />
+      <module name="springcloud-netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sc.producer.*" />
+          <option name="PATTERN" value="com.sc.netty.websoket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sc.producer" />
-      <option name="MAIN_CLASS_NAME" value="com.sc.producer.SpringcloudEurekaProducerApplicationTests" />
-      <option name="METHOD_NAME" value="getList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringcloudEurekaProducerApplicationTests.selectPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-eureka-producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sc.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sc.producer" />
-      <option name="MAIN_CLASS_NAME" value="com.sc.producer.SpringcloudEurekaProducerApplicationTests" />
-      <option name="METHOD_NAME" value="selectPage" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -291,7 +305,7 @@
       <module name="springcloud-netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sc.netty.*" />
+          <option name="PATTERN" value="com.sc.netty.websoket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -306,7 +320,7 @@
       <module name="springcloud-netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sc.netty.*" />
+          <option name="PATTERN" value="com.sc.netty.websoket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -378,8 +392,6 @@
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
       <item itemvalue="Application.MysqlGenerator" />
-      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage" />
-      <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
@@ -389,14 +401,16 @@
       <item itemvalue="Spring Boot.NettyApplication" />
       <item itemvalue="JUnit.SpringcloudNettyApplicationTests" />
       <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
+      <item itemvalue="Application.WSServer" />
+      <item itemvalue="Application.MysqlGenerator (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MysqlGenerator (1)" />
+        <item itemvalue="Application.WSServer" />
         <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
         <item itemvalue="JUnit.SpringcloudNettyApplicationTests" />
         <item itemvalue="Application.MysqlGenerator" />
-        <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.selectPage" />
-        <item itemvalue="JUnit.SpringcloudEurekaProducerApplicationTests.getList" />
       </list>
     </recent_temporary>
   </component>
@@ -413,7 +427,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.40226415" />
+          <option name="contentProportion" value="0.13886793" />
           <treeState>
             <expand>
               <path>
@@ -423,7 +437,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27613caf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6cb1ac45" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ce1b8078" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -483,7 +497,7 @@
       <workItem from="1587458889627" duration="1598000" />
       <workItem from="1587460508185" duration="46641000" />
       <workItem from="1587804682303" duration="1570000" />
-      <workItem from="1587806281918" duration="4331000" />
+      <workItem from="1587806281918" duration="17195000" />
     </task>
     <servers />
   </component>

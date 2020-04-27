@@ -5,7 +5,7 @@ spring:
   application:
     name: producer
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/im?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: zrz2623396
     driver-class-name: com.mysql.cj.jdbc.Driver

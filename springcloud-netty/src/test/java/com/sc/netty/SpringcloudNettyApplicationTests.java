@@ -1,5 +1,6 @@
 package com.sc.netty;
 
+import com.sc.netty.websoket.WSServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
@@ -30,7 +31,7 @@ public class SpringcloudNettyApplicationTests {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(bossGroup, workerGroup) // 设置主从线程组
                     .channel(NioServerSocketChannel.class) // 设置nio的双向通道
-                    .childHandler(new ServerInitializer()); // 子处理器，从线程组做拦截处理
+                    .childHandler(new WSServerInitializer()); // 子处理器，从线程组做拦截处理
 
             // 启动server 启动方式设置同步方式
             ChannelFuture channelFuture = serverBootstrap.bind(7070).sync();

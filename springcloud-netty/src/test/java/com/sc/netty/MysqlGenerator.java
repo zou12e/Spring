@@ -1,6 +1,7 @@
 package com.sc.netty;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
@@ -16,7 +17,7 @@ import java.util.Map;
 
 public class MysqlGenerator {
 
-    static final String URL = "jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false";
+    static final String URL = "jdbc:mysql://127.0.0.1:3306/im?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false";
     static final String DRIVERNAME = "com.mysql.cj.jdbc.Driver";
     static final String USERNAME = "root";
     static final String PASSWORD = "zrz2623396";
@@ -24,25 +25,24 @@ public class MysqlGenerator {
     public static void main(String[] args) {
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
-
-        String[] tables = {"user"}; //表名
-        String projectName = "/springcloud-eureka-producer";
-        String parent = "com.sc.producer";
+        String[] tables = {"user", "my_friends", "chat_msg", "friends_request"}; //表名
+        String projectName = "/springcloud-netty";
+        String parent = "com.sc.netty";
         String root = System.getProperty("user.dir") + projectName;
 
         // 1. 全局配置
         GlobalConfig gc = new GlobalConfig();
         gc.setOutputDir(root + "/src/main/java");
         gc.setAuthor("Jeff");
-        gc.setOpen(true);
-        gc.setSwagger2(true);
+        gc.setOpen(false);
+        gc.setSwagger2(false);
         gc.setFileOverride(false);// 是否覆盖文件
         gc.setActiveRecord(true);// 开启 activeRecord 模式
         gc.setEnableCache(false);// XML 二级缓存
         gc.setBaseResultMap(true);// XML ResultMap
         gc.setBaseColumnList(true);// XML columList
         gc.setServiceName("%sService");
-
+        gc.setIdType(IdType.AUTO);
         gc.setDateType(DateType.ONLY_DATE);
         mpg.setGlobalConfig(gc);
 
@@ -71,9 +71,9 @@ public class MysqlGenerator {
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setCapitalMode(true);
         strategy.setEntityLombokModel(true); //lombok
+        strategy.setEntityColumnConstant(true); // 【实体】是否生成字段常量
         strategy.setRestControllerStyle(true);
         strategy.setInclude(tables);
-        strategy.setRestControllerStyle(true);
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setLogicDeleteFieldName("deleted"); //逻辑删除
         strategy.setVersionFieldName("version"); //乐观锁
