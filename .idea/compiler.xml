@@ -9,6 +9,7 @@
         <module name="springcloud-config" />
         <module name="springcloud-eureka" />
         <module name="springcloud-gateway" />
+        <module name="spring" />
         <module name="springcloud-client-api" />
         <module name="springcloud-eureka-producer" />
         <module name="springcloud-eureka-consumers" />
