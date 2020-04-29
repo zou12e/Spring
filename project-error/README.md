@@ -1,13 +1,13 @@
 ### 搭建框架是出现的一些错误，记录一下
 
-````
+````java
 spring-boot-starter-web
 spring-boot-starter-gateway
 两个包之间会冲突
 
 ````
 
-````
+````java
 项目的打包类型：pom、jar、war
 packaging 默认是jar类型，
 pom  父类型都为pom类型
@@ -18,7 +18,7 @@ war 需要部署的项目
 ````
 
 
-````
+````java
 SpringBoot对应SpringCloud版本号
 https://start.spring.io/actuator/info
 [spring-cloud]内容对照
@@ -28,13 +28,13 @@ https://blog.csdn.net/nnsword/article/details/86979647
 https://spring.io/projects/platform#learn
 ````
 
-````
+````java
 Exception in thread "main" java.lang.NoClassDefFoundError: org/springframework/util/unit/DataSize
 maven compile 
 pom版本问题
 ````
 
-````
+````java
 ERROR 27915 --- [0.0-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : 
 Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Operation timed out (Connection timed out) executing GET http://spring-cloud-producer/hello?name=dfdsf] with root cause
 新项目出现问题，先查看服务端口是否被占用
@@ -43,7 +43,7 @@ localhost:8080 访问没有问题
 ````
 
 
-````
+````java
 Cannot load driver class: com.mysql.cj.jdbc.Driver
 检查数据库版本
 mysql 
@@ -79,7 +79,7 @@ password=root
 
 ````
 
-````
+````java
 curl -X POST http://localhost:8900/actuator/bus-refresh
 {"timestamp":"2020-04-01T03:54:10.836+0000","status":405,"error":"Method Not Allowed","message":"Request method 'POST' not supported","path":"/actuator/bus-refresh"}
 
@@ -93,7 +93,7 @@ management.endpoints.web.exposure.include=*
 Channel shutdown: connection error
 ````
 
-````
+````java
 Description:
 Parameter 1 of method requestRateLimiterGatewayFilterFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a single bean, but 2 were found:
 	- userKeyResolver: defined by method 'userKeyResolver' in class path resource [com/sc/config/Config.class]
@@ -110,7 +110,7 @@ key-resolver 与 config 一一对应
 ````
 
 
-````
+````java
 Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://producer/login": producer; nested exception is java.net.UnknownHostException: producer] with root cause
 
 如果使用服务名调用 需要开启负载 (@LoadBalanced)
@@ -122,34 +122,7 @@ public RestTemplate restTemplate(RestTemplateBuilder builder) {
 RestTemplate
 
 Spring Boot<=1.3 无需定义，Spring Boot自动为您定义了一个。
-Spring Boot >= 1.4 Spring Boot不再自动定义一个RestTemplate，而是定义了一个RestTemplateBuilder允许您更好地控制所RestTemplate创建的对象
+Spring Boot >= 1.4 Spring Boot不再自动定义一个RestTemplate，而是定义了一个RestTemplateBuilder允许您更好地
 
-
-````
-
-
-````
- Property 'configuration' and 'configLocation' can not specified with together
- 
- yml配置
- mybatis-plus.config-location
- 与
- mybatis-plus.configuration.log-impl
-配置冲突(config-location  与  configuration)
-删除一个即可
-````
-
-
-````
-Requested bean is currently in creation: Is there an unresolvable circular reference?
-循环注入
-
-@Bean
-RabbitTemplate rabbitTemplate() {}
- 
-@Autowired
-RabbitTemplate rabbitTemplate;
-
-冲突， 去掉一个即可
 
 ````
