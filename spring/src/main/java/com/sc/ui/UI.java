@@ -20,16 +20,24 @@ public class UI {
 
     public static void main(String[] args) {
 
+        // 创建对象的方式
+        
+        /**
+         * 普通new()对象
+         */
         IService service = new ServiceImpl();
         service.save("new()");
 
+        /**
+         * 自己实现BeanFactory
+         */
         IService serviceBean = (IService) MyBeanFactory.getBean("service");
         serviceBean.save("MyBeanFactory");
 
 
 
         /**
-         * ClassPathXmlApplicationContext 类路径配置文件
+         *  ClassPathXmlApplicationContext 类路径配置文件
          *  FileSystemXmlApplicationContext 磁盘可访问路径的配置文件
          *  AnnotationConfigApplicationContext 注解
         */
