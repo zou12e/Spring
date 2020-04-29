@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/Spring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/resources/bean.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/resources/bean.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -212,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NettyApplication">
+  <component name="RunManager" selected="Application.UI">
     <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
       <module name="springcloud-eureka-consumers" />
@@ -239,12 +245,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sc.producer.MysqlGenerator" />
-      <module name="springcloud-eureka-producer" />
+    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.ui.UI" />
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sc.producer.*" />
+          <option name="PATTERN" value="com.sc.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -355,7 +361,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
-      <item itemvalue="Application.MysqlGenerator" />
       <item itemvalue="Application.WSServer" />
       <item itemvalue="Application.MysqlGenerator (1)" />
       <item itemvalue="JUnit.SpringcloudNettyApplicationTests" />
@@ -367,14 +372,15 @@
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication2" />
       <item itemvalue="Spring Boot.NettyApplication" />
+      <item itemvalue="Application.UI" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UI" />
         <item itemvalue="Application.MysqlGenerator (1)" />
         <item itemvalue="Application.WSServer" />
         <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
         <item itemvalue="JUnit.SpringcloudNettyApplicationTests" />
-        <item itemvalue="Application.MysqlGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -458,7 +464,7 @@
       <workItem from="1587804682303" duration="1570000" />
       <workItem from="1587806281918" duration="32638000" />
       <workItem from="1588163746198" duration="4000" />
-      <workItem from="1588163768454" duration="66000" />
+      <workItem from="1588163768454" duration="8457000" />
     </task>
     <servers />
   </component>
@@ -513,6 +519,11 @@
           <url>file://$PROJECT_DIR$/springcloud-eureka-producer/src/main/java/com/sc/producer/controller/FeignUserController.java</url>
           <line>39</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

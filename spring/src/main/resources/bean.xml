@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+
+        1. 创建bean的三种方式
+            第一种方式：适用默认的构造的函数创建
+            第二种方式：使用普通工厂的方法创建对象
+            第三种方式：使用工厂的静态方法创建对象
+
+
+        2. bean对象的作用范围
+            scope属性
+                singleton 单例
+                prototype 多例
+                request 作用于web应用的请求范围
+                session 作用于web应用的会话范围
+                globalSession 应用集群的会话范围
+
+
+        3. bean对象的生命周期
+            单例对象:
+                出生: 当容器创建时时对象出生(解析配置文件)
+                活着: 只要容器还在，对象一直活着
+                死亡: 容器销毁，对象销毁
+                总结: 单例对象的生命周期与容器相同
+            多例对象:
+                出生: 当我们使用对象时，spring框架帮我们创建
+                活着: 对象只要在使用的过程中就一直活着。
+                死亡: 没有别的对象引用时，由Java垃圾回收器回收
+
+    -->
+    <bean id="xmlService" class="com.sc.service.impl.ServiceImpl"   ></bean>
+    <bean id="beanService" factory-bean="xmlService"  factory-method="getService"  ></bean>
+    <bean id="staticService" class="com.sc.service.impl.ServiceImpl" factory-method="getStaticService"  ></bean>
+
+
+
+
+</beans>
