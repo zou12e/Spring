@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/bean.xml" afterDir="false" />
     </list>
@@ -458,7 +461,7 @@
       <workItem from="1587804682303" duration="1570000" />
       <workItem from="1587806281918" duration="32638000" />
       <workItem from="1588163746198" duration="4000" />
-      <workItem from="1588163768454" duration="9076000" />
+      <workItem from="1588163768454" duration="15150000" />
     </task>
     <servers />
   </component>

@@ -6,22 +6,18 @@ import com.sc.service.impl.ServiceImpl;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
-import sun.tools.jconsole.inspector.XMBean;
 import org.springframework.core.io.Resource;
 
 
 public class UI {
 
-
+    /**
+     * 创建对象的方式与依赖注入
+     * @param args
+     */
     public static void main(String[] args) {
-
-        // 创建对象的方式
-        
         /**
          * 普通new()对象
          */
@@ -42,7 +38,7 @@ public class UI {
          *  AnnotationConfigApplicationContext 注解
         */
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml") ;
-        IService xmlBean = context.getBean("xmlService", IService.class);
+        IService xmlBean = context.getBean("service", IService.class);
         xmlBean.save("xmlService");
 
         /**
@@ -54,15 +50,41 @@ public class UI {
          */
         Resource resource = new ClassPathResource("bean.xml");
         BeanFactory beanFactory =  new XmlBeanFactory(resource);
-        IService xmlBeanFactory = beanFactory.getBean("xmlService", IService.class);
-        xmlBeanFactory.save("beanFactoryXml");
+        IService xmlBeanFactory = beanFactory.getBean("service", IService.class);
+        xmlBeanFactory.save("xmlBeanFactoryService");
 
-
+        /**
+         * 普通工厂的方法创建对象
+         */
         IService beanService = context.getBean("beanService", IService.class);
         beanService.save("beanService");
 
+
+        /**
+         * 普通工厂的静态方法创建对象
+         */
         IService staticBeanService = context.getBean("staticService", IService.class);
         staticBeanService.save("staticService");
 
+
+        /**
+         * 构造函数依赖注入
+         */
+        IService constructorService = context.getBean("constructorService", IService.class);
+        constructorService.println("constructorService");
+
+
+        /**
+         * set方法依赖注入
+         */
+        IService setService = context.getBean("setService", IService.class);
+        setService.println("setService");
+
+
+        /**
+         * set方法依赖注入集合
+         */
+        IService collectionService = context.getBean("collectionService", IService.class);
+        collectionService.print("collectionService");
     }
 }

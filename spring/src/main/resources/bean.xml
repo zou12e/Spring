@@ -6,38 +6,111 @@
 
     <!--
 
-        1. 创建bean的三种方式
-            第一种方式：适用默认的构造的函数创建
-            第二种方式：使用普通工厂的方法创建对象
-            第三种方式：使用工厂的静态方法创建对象
+1. 创建bean的三种方式
+    第一种方式：适用默认的构造的函数创建
+    第二种方式：使用普通工厂的方法创建对象
+    第三种方式：使用工厂的静态方法创建对象
 
 
-        2. bean对象的作用范围
-            scope属性
-                singleton 单例
-                prototype 多例
-                request 作用于web应用的请求范围
-                session 作用于web应用的会话范围
-                globalSession 应用集群的会话范围
+2. bean对象的作用范围
+    scope属性
+        singleton 单例
+        prototype 多例
+        request 作用于web应用的请求范围
+        session 作用于web应用的会话范围
+        globalSession 应用集群的会话范围
 
 
-        3. bean对象的生命周期
-            单例对象:
-                出生: 当容器创建时时对象出生(解析配置文件时)
-                活着: 只要容器还在，对象一直活着
-                死亡: 容器销毁，对象销毁
-                总结: 单例对象的生命周期与容器相同
-            多例对象:
-                出生: 当我们使用对象时，spring框架帮我们创建
-                活着: 对象只要在使用的过程中就一直活着。
-                死亡: 没有别的对象引用时，由Java垃圾回收器回收
+3. bean对象的生命周期
+    单例对象:
+        出生: 当容器创建时时对象出生(解析配置文件时)
+        活着: 只要容器还在，对象一直活着
+        死亡: 容器销毁，对象销毁
+        总结: 单例对象的生命周期与容器相同
+    多例对象:
+        出生: 当我们使用对象时，spring框架帮我们创建
+        活着: 对象只要在使用的过程中就一直活着。
+        死亡: 没有别的对象引用时，由Java垃圾回收器回收
+
+4. 依赖注入(DI)
+    管理： 交给Spring管理依赖关系，依赖关系的维护被称之为依赖注入
+    注入数据三类：
+            1. 基本数据类型和String
+            2. 其他bean类型（配置文件中的bean，或者注解配置的bean）
+            3. 复杂类型/集合类型
+               List结构标签 list array set
+               Map结构标签 map props
+    注入方式三种：
+            1. 构造函数提供
+                使用constructor-arg标签
+                    type: 构造函数数据类型
+                    index: 构造函数下标
+                    name: 构造函数名字
+                    ============================
+                    value: 直接赋值
+                    ref: 用于其他的bean类型数据
+                优势:
+                    获取bean对象时，注入数据是必须的操作，否则对象无法创建成功
+                弊端:
+                    改变了bean对象的实例化方式，是我们创建对象时，如果拿不到这些数据，也必须提供
+
+            2. 使用set方法提供
+                使用property标签
+                    name: 用于指定注入时所调用的set方法名称
+                    value: 直接赋值
+                    ref: 用于其他的bean类型数据
+
+            3. 使用注解提供
 
     -->
-    <bean id="xmlService" class="com.sc.service.impl.ServiceImpl"   ></bean>
-    <bean id="beanService" factory-bean="xmlService"  factory-method="getService"  ></bean>
+    <bean id="service" class="com.sc.service.impl.ServiceImpl"   ></bean>
+    <bean id="beanService" factory-bean="service"  factory-method="getService"  ></bean>
     <bean id="staticService" class="com.sc.service.impl.ServiceImpl" factory-method="getStaticService"  ></bean>
 
+    <bean id="now" class="java.util.Date" > </bean>
 
+    <bean id="constructorService" class="com.sc.service.impl.ServiceImpl"   >
+        <constructor-arg name="name" value="Jeff" ></constructor-arg>
+        <constructor-arg name="age" value="18" ></constructor-arg>
+        <constructor-arg name="birthday" ref="now" ></constructor-arg>
+    </bean>
+
+    <bean id="setService" class="com.sc.service.impl.ServiceImpl"   >
+        <property name="name" value="jeff" ></property>
+    </bean>
+
+    <bean id="collectionService" class="com.sc.service.impl.ServiceImpl"   >
+        <property name="myStrs"  >
+            <array>
+                <value>AAA</value>
+            </array>
+        </property>
+        <property name="myList"  >
+            <list>
+                <value>BBB</value>
+            </list>
+        </property>
+        <property name="mySet"  >
+            <set>
+                <value>CCC</value>
+                <value>DDD</value>
+            </set>
+        </property>
+        <property name="myMap"  >
+           <map>
+               <entry key="AAA" value="AAAValue"   ></entry>
+               <entry key="BBB"  >
+                    <value>BBBValue</value>
+               </entry>
+           </map>
+        </property>
+        <property name="myProps"  >
+            <props>
+                <prop key="AAA" >AAAValue</prop>
+                <prop key="BBB" >BBBValue</prop>
+            </props>
+        </property>
+    </bean>
 
 
 </beans>
