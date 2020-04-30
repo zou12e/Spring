@@ -67,7 +67,7 @@
     <bean id="beanService" factory-bean="service"  factory-method="getService"  ></bean>
     <bean id="staticService" class="com.sc.service.impl.ServiceImpl" factory-method="getStaticService"  ></bean>
 
-    <bean id="now" class="java.util.Date" > </bean>
+    <bean id="now" class="java.util.Date" init-method="getTime" destroy-method="getTime" > </bean>
 
     <bean id="constructorService" class="com.sc.service.impl.ServiceImpl"   >
         <constructor-arg name="name" value="Jeff" ></constructor-arg>

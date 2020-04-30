@@ -5,12 +5,18 @@ import com.sc.service.IService;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 @Data
 @NoArgsConstructor
+@Component("customName")
 public class ServiceImpl implements IService {
+
+    @Autowired
+    private  AutowiredImpl autowired;
 
     public ServiceImpl(String name, Integer age, Date birthday) {
         this.name = name;
@@ -50,6 +56,11 @@ public class ServiceImpl implements IService {
         System.out.println(this.myMap);
         System.out.println(this.myProps);
 
+    }
+
+    public void autowired(String name) {
+        System.out.println("autowired:" + name);
+        autowired.println();
     }
 
     public ServiceImpl getService() {
