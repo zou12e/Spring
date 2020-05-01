@@ -11,7 +11,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
 
-public class UI {
+public class XmlClient {
 
     /**
      * 创建对象的方式与依赖注入

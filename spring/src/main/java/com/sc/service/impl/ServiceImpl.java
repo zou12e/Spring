@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
@@ -13,7 +15,11 @@ import java.util.*;
 @Data
 @NoArgsConstructor
 @Component("customName")
+@PropertySource("classpath:bean.properties")
 public class ServiceImpl implements IService {
+
+    @Value("${service}")
+    private String propertie;
 
     @Autowired
     private  AutowiredImpl autowired;
@@ -60,6 +66,7 @@ public class ServiceImpl implements IService {
 
     public void autowired(String name) {
         System.out.println("autowired:" + name);
+        System.out.println("propertie:" + propertie);
         autowired.println();
     }
 

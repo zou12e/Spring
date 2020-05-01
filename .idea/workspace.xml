@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/AutowiredImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/resources/beanContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/AnnotationXmlClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/AnnotationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/XmlClient.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +106,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name=".\" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.sc.netty" />
       <recent name="" />
@@ -216,9 +219,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sc.ui.Client" />
+  <component name="RunManager">
+    <configuration name="AnnotationClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.ui.AnnotationClient" />
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnnotationXmlClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.ui.AnnotationXmlClient" />
       <module name="spring" />
       <extension name="coverage">
         <pattern>
@@ -256,19 +272,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sc.ui.UI" />
-      <module name="spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sc.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WSServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.netty.websoket.WSServer" />
       <module name="springcloud-netty" />
@@ -282,18 +285,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringcloudNettyApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-netty" />
+    <configuration name="XmlClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.ui.XmlClient" />
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sc.netty.websoket.*" />
+          <option name="PATTERN" value="com.sc.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sc.netty" />
-      <option name="MAIN_CLASS_NAME" value="com.sc.netty.SpringcloudNettyApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -359,7 +359,6 @@
       <item itemvalue="Application.EurekaConsumersApplication" />
       <item itemvalue="Application.WSServer" />
       <item itemvalue="Application.MysqlGenerator (1)" />
-      <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
@@ -367,16 +366,17 @@
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication2" />
       <item itemvalue="Spring Boot.NettyApplication" />
-      <item itemvalue="Application.UI" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.XmlClient" />
+      <item itemvalue="Application.AnnotationClient" />
+      <item itemvalue="Application.AnnotationXmlClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.UI" />
+        <item itemvalue="Application.AnnotationClient" />
+        <item itemvalue="Application.AnnotationXmlClient" />
+        <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.MysqlGenerator (1)" />
         <item itemvalue="Application.WSServer" />
-        <item itemvalue="JUnit.SpringcloudNettyApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +460,7 @@
       <workItem from="1587804682303" duration="1570000" />
       <workItem from="1587806281918" duration="32638000" />
       <workItem from="1588163746198" duration="4000" />
-      <workItem from="1588163768454" duration="23738000" />
+      <workItem from="1588163768454" duration="28588000" />
     </task>
     <servers />
   </component>

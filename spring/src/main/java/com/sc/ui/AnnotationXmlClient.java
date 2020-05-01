@@ -1,19 +1,8 @@
 package com.sc.ui;
 
-import com.sc.factory.MyBeanFactory;
 import com.sc.service.IService;
-import com.sc.service.impl.ServiceImpl;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 /**
   注解类型
@@ -48,9 +37,10 @@ import org.springframework.stereotype.Service;
     4. 生命周期  (xml init-method destroy-method)
         @PostConstruct 初始化
         @PreDestroy    销毁
- */
 
-public class Client {
+
+ */
+public class AnnotationXmlClient {
 
     /**
      * 创建对象的方式与依赖注入
@@ -71,7 +61,6 @@ public class Client {
          */
         IService beanService = context.getBean("customName", IService.class);
         beanService.save("customName");
-
 
         beanService.autowired("Autowired");
 
