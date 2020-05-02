@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/proxy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/proxy/IProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/proxy/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="AnnotationClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.ui.AnnotationClient" />
       <module name="spring" />
@@ -241,6 +247,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.proxy.Client" />
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaConsumersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.EurekaConsumersApplication" />
       <module name="springcloud-eureka-consumers" />
@@ -260,19 +279,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sc.netty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WSServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sc.netty.websoket.WSServer" />
-      <module name="springcloud-netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sc.netty.websoket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,8 +358,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
-      <item itemvalue="Application.WSServer" />
       <item itemvalue="Application.MysqlGenerator (1)" />
+      <item itemvalue="Application.XmlClient" />
+      <item itemvalue="Application.AnnotationClient" />
+      <item itemvalue="Application.AnnotationXmlClient" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.EurekaProducerApplication" />
@@ -361,17 +369,15 @@
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication2" />
       <item itemvalue="Spring Boot.NettyApplication" />
-      <item itemvalue="Application.XmlClient" />
-      <item itemvalue="Application.AnnotationClient" />
-      <item itemvalue="Application.AnnotationXmlClient" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.AnnotationClient" />
         <item itemvalue="Application.AnnotationXmlClient" />
         <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.MysqlGenerator (1)" />
-        <item itemvalue="Application.WSServer" />
       </list>
     </recent_temporary>
   </component>
@@ -384,35 +390,6 @@
           <select />
         </treeState>
       </serviceView>
-    </option>
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.22566038" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27613caf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27613caf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e26a839a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-          <option name="viewType" value="contributor" />
-          <option name="roots">
-            <list>
-              <ServiceState>
-                <option name="contributor" value="com.intellij.execution.dashboard.RunConfigurationsServiceViewContributor" />
-              </ServiceState>
-            </list>
-          </option>
-        </serviceView>
-      </list>
     </option>
     <option name="selectedView" value="0" />
   </component>
@@ -456,6 +433,7 @@
       <workItem from="1587806281918" duration="32638000" />
       <workItem from="1588163746198" duration="4000" />
       <workItem from="1588163768454" duration="28884000" />
+      <workItem from="1588386881717" duration="4190000" />
     </task>
     <servers />
   </component>

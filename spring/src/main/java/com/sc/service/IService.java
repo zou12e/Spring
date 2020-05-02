@@ -15,4 +15,6 @@ public interface IService {
 
 
     void autowired(String name);
+
+    void transfer();
 }

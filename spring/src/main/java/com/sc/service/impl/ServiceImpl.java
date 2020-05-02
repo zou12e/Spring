@@ -70,6 +70,10 @@ public class ServiceImpl implements IService {
         autowired.println();
     }
 
+
+    public void transfer() {
+    }
+
     public ServiceImpl getService() {
         System.out.println("我是通过普通工厂中的方法创建的对象");
         return new ServiceImpl();
