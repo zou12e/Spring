@@ -1,6 +1,7 @@
 package com.sc.ui;
 
 import com.sc.config.SpringConfiguration;
+import com.sc.domain.Account;
 import com.sc.factory.MyBeanFactory;
 import com.sc.service.IService;
 import org.springframework.beans.factory.BeanFactory;
@@ -14,6 +15,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
   全注解配置
@@ -87,12 +90,17 @@ public class AnnotationClient {
         /**
          * 普通工厂的方法创建对象
          */
-        IService beanService = context.getBean("customName", IService.class);
-        beanService.save("customName");
+//        IService beanService = context.getBean("customName", IService.class);
+//        beanService.save("customName");
+//
+//        beanService.autowired("Bean");
+//
+//        beanService.transfer(); MLog clients using java 1.4+ standard logging.
 
-        beanService.autowired("Bean");
 
-        beanService.transfer();
+        IService beanProxyService = context.getBean("proxyIService", IService.class);
 
+        List<Account> list = beanProxyService.proxy();
+        list.forEach(System.out::println);
     }
 }

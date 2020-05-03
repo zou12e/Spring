@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/utils/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/utils/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/factory/BeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/IService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/ServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/AnnotationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/AnnotationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/bean.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/bean.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,19 +105,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name=".\" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.sc.netty" />
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sc.ui" />
-      <recent name="com.sc.netty.websoket.data" />
-      <recent name="com.sc.netty.handler" />
-      <recent name="com.sc.netty.config" />
-      <recent name="com.sc.netty" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring/src/main/resources" />
@@ -130,6 +115,16 @@
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main/resources" />
       <recent name="$PROJECT_DIR$/springcloud-netty/src/main/java/com/sc/netty" />
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sc.factory" />
+      <recent name="com.sc.ui" />
+      <recent name="com.sc.netty.websoket.data" />
+      <recent name="com.sc.netty.handler" />
+      <recent name="com.sc.netty.config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name=".\" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -223,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.AnnotationClient">
     <configuration name="AnnotationClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.ui.AnnotationClient" />
       <module name="spring" />
@@ -376,8 +371,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
         <item itemvalue="Application.AnnotationClient" />
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.AnnotationXmlClient" />
         <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.MysqlGenerator (1)" />
@@ -436,7 +431,7 @@
       <workItem from="1587806281918" duration="32638000" />
       <workItem from="1588163746198" duration="4000" />
       <workItem from="1588163768454" duration="28884000" />
-      <workItem from="1588386881717" duration="9436000" />
+      <workItem from="1588386881717" duration="10593000" />
     </task>
     <servers />
   </component>
@@ -494,7 +489,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java</url>
-          <line>54</line>
+          <line>56</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -504,7 +499,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java</url>
-          <line>38</line>
+          <line>40</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

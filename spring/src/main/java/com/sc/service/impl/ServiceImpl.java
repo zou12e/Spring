@@ -101,8 +101,14 @@ public class ServiceImpl implements IService {
     }
 
     @Override
-    public void proxy() {
-        System.out.println("-----------我被代理了-----------");
+    public List<Account> proxy()  {
+        try {
+            List<Account> list = runner.query("select * from account", new BeanListHandler<Account>(Account.class));
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
     }
 
     public ServiceImpl getService() {
