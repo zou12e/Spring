@@ -3,7 +3,6 @@ package com.sc.ui;
 import com.sc.config.SpringConfiguration;
 import com.sc.factory.MyBeanFactory;
 import com.sc.service.IService;
-import com.sc.service.impl.ServiceImpl;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
@@ -92,6 +91,8 @@ public class AnnotationClient {
         beanService.save("customName");
 
         beanService.autowired("Bean");
+
+        beanService.transfer();
 
     }
 }
