@@ -2,7 +2,7 @@ package com.sc.ui;
 
 import com.sc.factory.MyBeanFactory;
 import com.sc.service.IService;
-import com.sc.service.impl.ServiceImpl;
+import com.sc.service.impl.MyServiceImpl;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
@@ -21,7 +21,7 @@ public class XmlClient {
         /**
          * 普通new()对象
          */
-        IService service = new ServiceImpl();
+        IService service = new MyServiceImpl();
         service.save("new()");
 
         /**

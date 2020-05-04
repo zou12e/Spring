@@ -90,17 +90,24 @@ public class AnnotationClient {
         /**
          * 普通工厂的方法创建对象
          */
-//        IService beanService = context.getBean("customName", IService.class);
-//        beanService.save("customName");
-//
-//        beanService.autowired("Bean");
-//
-//        beanService.transfer(); MLog clients using java 1.4+ standard logging.
+        IService beanService = context.getBean("customName", IService.class);
+        beanService.save("customName");
+
+        beanService.autowired("Bean");
+
+        beanService.transfer();
 
 
         IService beanProxyService = context.getBean("proxyIService", IService.class);
 
+
         List<Account> list = beanProxyService.proxy();
         list.forEach(System.out::println);
+
+
+        beanService.text1();
+        beanService.text2(1);
+        beanService.text3();
+        beanService.text4(1);
     }
 }

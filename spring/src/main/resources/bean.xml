@@ -63,23 +63,23 @@
             3. 使用注解提供
 
     -->
-    <bean id="service" class="com.sc.service.impl.ServiceImpl"   ></bean>
+    <bean id="service" class="com.sc.service.impl.MyServiceImpl"   ></bean>
     <bean id="beanService" factory-bean="service"  factory-method="getService"  ></bean>
-    <bean id="staticService" class="com.sc.service.impl.ServiceImpl" factory-method="getStaticService"  ></bean>
+    <bean id="staticService" class="com.sc.service.impl.MyServiceImpl" factory-method="getStaticService"  ></bean>
 
     <bean id="now" class="java.util.Date" init-method="getTime" destroy-method="getTime" > </bean>
 
-    <bean id="constructorService" class="com.sc.service.impl.ServiceImpl"   >
+    <bean id="constructorService" class="com.sc.service.impl.MyServiceImpl"   >
         <constructor-arg name="name" value="Jeff" ></constructor-arg>
         <constructor-arg name="age" value="18" ></constructor-arg>
         <constructor-arg name="birthday" ref="now" ></constructor-arg>
     </bean>
 
-    <bean id="setService" class="com.sc.service.impl.ServiceImpl"   >
+    <bean id="setService" class="com.sc.service.impl.MyServiceImpl"   >
         <property name="name" value="jeff" ></property>
     </bean>
 
-    <bean id="collectionService" class="com.sc.service.impl.ServiceImpl"   >
+    <bean id="collectionService" class="com.sc.service.impl.MyServiceImpl"   >
         <property name="myStrs"  >
             <array>
                 <value>AAA</value>

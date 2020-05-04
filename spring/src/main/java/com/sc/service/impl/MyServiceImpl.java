@@ -1,10 +1,8 @@
 package com.sc.service.impl;
 
 import com.sc.domain.Account;
-import com.sc.factory.MyBeanFactory;
 import com.sc.service.IService;
 import com.sc.utils.TransactionManager;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.commons.dbutils.QueryRunner;
@@ -20,7 +18,7 @@ import java.util.*;
 @NoArgsConstructor
 @Component("customName")
 @PropertySource("classpath:bean.properties")
-public class ServiceImpl implements IService {
+public class MyServiceImpl implements IService {
 
     @Value("${service}")
     private String propertie;
@@ -34,7 +32,7 @@ public class ServiceImpl implements IService {
     @Autowired
     private TransactionManager transactionManager;
 
-    public ServiceImpl(String name, Integer age, Date birthday) {
+    public MyServiceImpl(String name, Integer age, Date birthday) {
         this.name = name;
         this.age = age;
         this.birthday = birthday;
@@ -111,13 +109,35 @@ public class ServiceImpl implements IService {
         }
     }
 
-    public ServiceImpl getService() {
-        System.out.println("我是通过普通工厂中的方法创建的对象");
-        return new ServiceImpl();
+    @Override
+    public void text1() {
+        System.out.println("text1");
     }
 
-    public static ServiceImpl getStaticService() {
+    @Override
+    public void text2(Integer i) {
+        System.out.println("text2");
+    }
+
+    @Override
+    public int text3() {
+        System.out.println("text3");
+        return 0;
+    }
+
+    @Override
+    public int text4(Integer i) {
+        System.out.println("text4");
+        return 0;
+    }
+
+    public MyServiceImpl getService() {
+        System.out.println("我是通过普通工厂中的方法创建的对象");
+        return new MyServiceImpl();
+    }
+
+    public static MyServiceImpl getStaticService() {
         System.out.println("我是通过普通工厂中的静态方法创建的对象");
-        return new ServiceImpl();
+        return new MyServiceImpl();
     }
 }

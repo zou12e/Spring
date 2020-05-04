@@ -22,4 +22,10 @@ public interface IService {
     void transfer();
 
     List<Account> proxy();
+
+
+    void text1();
+    void text2(Integer i);
+    int text3();
+    int text4(Integer i);
 }

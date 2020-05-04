@@ -12,6 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan( "com.sc")
+@EnableAspectJAutoProxy
 public class SpringConfiguration {
 
     @Value("${datasource.url}")
