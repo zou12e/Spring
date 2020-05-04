@@ -7,6 +7,17 @@
      - 控制反转：把创建对象的权利交给框架，消减计算机程序的耦合，消减代码的依赖关系
      - 依赖注入：依赖关系的维护（交给Spring管理）
    - AOP（面向切面编程)）
+     - 在程序运行期间，不修改的源码的情况下对已有方法的增强
+     - 减少重复代码，提高开发效率，维护方便
+       - Joinpoint：连接点，业务层的方法
+       - Pointuct：切入点，被增强的方法（所有的切入点都是连接点）
+       - Advice：通知/增强， 拦截方法之后的操作
+         - 前置通知，后置通知，异常通知，最终通知，环绕通知（整个invoke方法）
+       - Introduction：引介
+       - Target：目标对象，被代理代理对象
+       - Weaving：织入，增强目标对象来创建的新的代理对象的过程。
+       - Proxy：代理对象，一个被AOP织入增强的结果生成的代理类
+       - Aspect：切面，切入点方法与通知的结合
 2. 优势：
 
    - 解耦，简化开发
@@ -99,7 +110,7 @@
     }
 ```
 
-
+#### Bean创建
 
 ```xml
 1. 创建bean的三种方式
@@ -245,6 +256,8 @@
 
 
 
+#### 注解配置
+
 ```java
 全注解配置
    @Configuration
@@ -309,6 +322,169 @@
 当我们使用spring 5.x版本以上时，junit必须在4.12以上
 
 ```
+
+
+
+#### 动态代理
+
+```javascript
+动态代理
+            特点：字节码随用随创建，随用随加载
+            作用：不修改源码的基础上对方法增强
+            分类：
+                1. 基于接口的动态代理
+                    涉及的类：  Proxy
+                    提供者：   JDK官方
+                    要求：     被代理的类最少实现一个接口
+                    newProxyInstance方法参数：
+                        ClassLoader： 类加载器
+                            它是用于加载代理对象字节码，和被代理对象使用相同的类加载器，固定写法
+                        Class[]： 字节码数组
+                            它是用于让代理对象和被代理对象有相同方法，固定写法
+                        InvocationHandler： 增强的代码
+                            它是让我们写如何代理，通常都是匿名内部类
+
+final Producer producer = new Producer();
+IProducer iProducer = (IProducer)Proxy.newProxyInstance(
+  Producer.class.getClassLoader(), 
+  Producer.class.getInterfaces(), 
+  new InvocationHandler() {
+    /**
+     * 执行被代理对象的任何接口方法都经过该方法
+     * @param proxy     代理对象的引用
+     * @param method    当前执行的方法
+     * @param args      当前执行方法的参数
+     * @return          被代理对象有相同的返回值
+     * @throws Throwable
+     */
+    public Object invoke(Object proxy, 
+                          Method method, 
+                          Object[] args) throws Throwable {
+        int money = Integer.valueOf(args[0].toString());
+        System.out.println("before:" + money);
+        Object object = method.invoke(producer, args);
+        return object;
+    }
+});
+iProducer.sale(9999);
+
+                            
+
+              2. 基于子类的动态代理
+                    涉及的类：  Enhancer
+                    提供者：   cglib库
+                    要求：     被代理的类不能是最终类
+                    create方法参数：
+                        Class：字节码
+                            它是用于指定代理对象的字节码
+                        Callback： 增强的代码
+                            它是让我们写如何代理，我们一般都是该接口的子接口实现类 MethodInterceptor
+
+Producer cglibProducer = (Producer)Enhancer.create(
+  producer.getClass(), 
+  new MethodInterceptor() {
+    /**
+     * 执行被代理对象的任何方法都会经过该方法
+     * @param proxy     代理对象的引用
+     * @param method    当前执行的方法
+     * @param args      当前执行方法的参数
+     * @param methodProxy 当前执行方法的代理对象
+     * @return          被代理对象有相同的返回值
+     * @throws Throwable
+     */
+    public Object intercept(Object proxy, 
+                            Method method, 
+                            Object[] args, 
+                            MethodProxy methodProxy) throws Throwable {
+        int money = Integer.valueOf(args[0].toString());
+        Object object = method.invoke(producer, args);
+        System.out.println("after: " + money);
+        return object;
+    }
+});
+cglibProducer.sale(200);
+```
+
+
+
+#### 注解AOP配置
+
+```java
+  注解AOP配置
+  
+      开启AOP注解支持
+      @EnableAspectJAutoProxy
+
+      切面注解
+      @Aspect
+
+      表达式注解
+      @Pointcut("execution(* com.sc.service.impl.*.*(..))")
+      private void pt(){}
+
+      通知注解
+      @Before("pt()")
+      @AfterReturning("pt()")
+      @AfterThrowing("pt()")
+      @After("pt()")
+      @Around("pt()")
+        
+```
+
+
+
+##### 切入点表达式
+
+```java
+	切入点表达式
+      关键字：execution(表达式)
+      表达式：
+            访问修饰符 返回值 包名.类名.方法名(参数列表)
+            public void com.sc.service.impl.MyServiceImpl.save()
+
+      访问修饰符可以省约
+            void com.sc.service.impl.MyServiceImpl.save()
+
+      返回值可以使用统配符，表示任意返回值
+            * com.sc.service.impl.MyServiceImpl.save()
+
+      包名可以使用统配符，表示任意包名，但是有几级包，就需要几个*
+            * *.*.*.*.MyServiceImpl.save()
+      包名可以使用*.. 表示当前包及其子包
+            * *..MyServiceImpl.save()
+
+      类名和方法都可以使用统配符，表示任意类名和方法名称
+            * *..*.*()
+
+      参数列表：
+        可以直接写数据类型
+            基本类型直接写名称   int
+            引用类型写包名加类名 java.lang.String
+        可以使用统配符，但是必须有参数
+        可以使用.. 表示有无参数均可
+
+      实际开发切入点通用写法：
+        * com.sc.service.impl.*.*(..)
+        execution(* com.sc.service.impl.*.*(..))	
+
+      全通配写法：
+            * *..*.*(..)
+
+    
+```
+
+
+
+核心容器 Core Contaniner
+
+BeanFactory
+
+Bean：计算机英语中，有可重用组件的含义；
+
+JavaBean： 用java语言编写的可重用组件。
+
+​		JavaBean > 实体类 范围
+
 
 
 
