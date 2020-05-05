@@ -46,7 +46,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class Logger {
 
-    @Pointcut("execution(* com.sc.service.impl.*.*(..))")
+    @Pointcut("execution(* com.sc.service.impl.MyServiceImpl.*(..))")
     private void pt(){}
 
     /**

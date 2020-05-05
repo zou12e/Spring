@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/ISpringService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/SpringServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/SpringAnnotationClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/AnnotationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/ui/AnnotationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/utils/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/utils/Logger.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,11 +119,11 @@
       <recent name="$PROJECT_DIR$/springcloud-eureka-producer/src/main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sc.service.impl" />
-      <recent name="com.sc.factory" />
       <recent name="com.sc.ui" />
+      <recent name="com.sc.service.impl" />
+      <recent name="com.sc.service" />
+      <recent name="com.sc.factory" />
       <recent name="com.sc.netty.websoket.data" />
-      <recent name="com.sc.netty.handler" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name=".\" />
@@ -214,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnnotationClient">
+  <component name="RunManager" selected="Application.SpringAnnotationClient">
     <configuration name="AnnotationClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.ui.AnnotationClient" />
       <module name="spring" />
@@ -267,12 +273,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysqlGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sc.netty.MysqlGenerator" />
-      <module name="springcloud-netty" />
+    <configuration name="SpringAnnotationClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.ui.SpringAnnotationClient" />
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sc.netty.*" />
+          <option name="PATTERN" value="com.sc.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,7 +358,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.EurekaConsumersApplication" />
-      <item itemvalue="Application.MysqlGenerator (1)" />
       <item itemvalue="Application.XmlClient" />
       <item itemvalue="Application.AnnotationClient" />
       <item itemvalue="Application.AnnotationXmlClient" />
@@ -364,14 +369,15 @@
       <item itemvalue="Spring Boot.EurekaServerApplication2" />
       <item itemvalue="Spring Boot.NettyApplication" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.SpringAnnotationClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringAnnotationClient" />
         <item itemvalue="Application.AnnotationClient" />
         <item itemvalue="Application.AnnotationXmlClient" />
         <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.MysqlGenerator (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +433,7 @@
       <workItem from="1587806281918" duration="32638000" />
       <workItem from="1588163746198" duration="4000" />
       <workItem from="1588163768454" duration="28884000" />
-      <workItem from="1588386881717" duration="16776000" />
+      <workItem from="1588386881717" duration="22548000" />
     </task>
     <servers />
   </component>
@@ -497,11 +503,6 @@
           <url>file://$PROJECT_DIR$/spring/src/main/java/com/sc/factory/MyBeanFactory.java</url>
           <line>40</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/com/sc/utils/TransactionManager.java</url>

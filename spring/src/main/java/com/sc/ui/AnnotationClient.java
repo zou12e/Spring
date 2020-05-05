@@ -87,14 +87,9 @@ public class AnnotationClient {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class) ;
 
-        /**
-         * 普通工厂的方法创建对象
-         */
         IService beanService = context.getBean("customName", IService.class);
         beanService.save("customName");
-
         beanService.autowired("Bean");
-
         beanService.transfer();
 
 
@@ -103,8 +98,6 @@ public class AnnotationClient {
 
         List<Account> list = beanProxyService.proxy();
         list.forEach(System.out::println);
-
-
         beanService.text1();
         beanService.text2(1);
         beanService.text3();
