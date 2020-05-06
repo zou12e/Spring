@@ -22,6 +22,9 @@ import javax.sql.DataSource;
 @ComponentScan( "com.sc")
 @EnableAspectJAutoProxy
 @PropertySource("classpath:bean.properties")
+/**
+ * 开启事务
+ */
 @EnableTransactionManagement
 public class SpringConfiguration {
 
@@ -81,6 +84,10 @@ public class SpringConfiguration {
         return new JdbcTemplate(springDataSource);
     }
 
+    /**
+     * 配置事务管理器
+     * @return
+     */
     @Bean
     public PlatformTransactionManager platformTransactionManager(DriverManagerDataSource springDataSource) {
         return new DataSourceTransactionManager(springDataSource);

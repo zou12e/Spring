@@ -21,6 +21,15 @@ import java.util.*;
 @Data
 @NoArgsConstructor
 @Service
+/**
+ transactionManager： 事务管理器
+ propagation：用于指定事务的传播行为。默认值REQUIRED，表示一定有事务，查询使用SUPPORTS
+ isolation： 指定事务的隔离级别，默认值DEFAULT，表示使用数据库的默认隔离级别
+ timeout：用于指定事务超时时间，默认值-1，用不超时，单位秒
+ readOnly：用于指定事务是否只读。默认值false，表示读写。查询使用true，表示只读
+ rollbackFor：用于指定一个异常，发生该异常时，事务回滚；默认事务都混滚
+ noRollbackFor：用于指定一个异常，发生该异常时，事务不回滚；默认事务都混滚
+ */
 @Transactional(transactionManager = "platformTransactionManager")
 public class SpringServiceImpl implements ISpringService {
 
