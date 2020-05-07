@@ -23,7 +23,7 @@ import javax.sql.DataSource;
 @EnableAspectJAutoProxy
 @PropertySource("classpath:bean.properties")
 /**
- * 开启事务
+ * 1. 开启事务
  */
 @EnableTransactionManagement
 public class SpringConfiguration {
@@ -85,7 +85,7 @@ public class SpringConfiguration {
     }
 
     /**
-     * 配置事务管理器
+     * 2. 配置事务管理器
      * @return
      */
     @Bean

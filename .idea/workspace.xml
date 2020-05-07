@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc110b0-1408-4899-8877-246ea5d0fb8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/config/SpringConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/SpringServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/com/sc/service/impl/SpringServiceImpl.java" afterDir="false" />
@@ -432,7 +431,7 @@
       <workItem from="1588386881717" duration="24804000" />
       <workItem from="1588752992291" duration="20000" />
       <workItem from="1588753026815" duration="4000" />
-      <workItem from="1588759328634" duration="6404000" />
+      <workItem from="1588759328634" duration="7764000" />
     </task>
     <servers />
   </component>

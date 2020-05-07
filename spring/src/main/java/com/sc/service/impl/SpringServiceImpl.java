@@ -22,6 +22,7 @@ import java.util.*;
 @NoArgsConstructor
 @Service
 /**
+ * 3. 配置事务通知
  transactionManager： 事务管理器
  propagation：用于指定事务的传播行为。默认值REQUIRED，表示一定有事务，查询使用SUPPORTS
  isolation： 指定事务的隔离级别，默认值DEFAULT，表示使用数据库的默认隔离级别
